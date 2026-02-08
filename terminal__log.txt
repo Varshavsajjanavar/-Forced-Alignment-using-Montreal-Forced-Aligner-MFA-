@@ -1,0 +1,2513 @@
+
+(base) C:\Users\DELL>conda --version
+conda 23.7.4
+
+(base) C:\Users\DELL>conda create -n mfa python=3.9
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.7.4
+  latest version: 26.1.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=26.1.0
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\DELL\anaconda3\envs\mfa
+
+  added / updated specs:
+    - python=3.9
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    bzip2-1.0.8                |       h2bbff1b_6          90 KB
+    ca-certificates-2025.12.2  |       haa95532_0         125 KB
+    expat-2.7.4                |       hd7fb8db_0          32 KB
+    libexpat-2.7.4             |       hd7fb8db_0         121 KB
+    libffi-3.4.4               |       hd77b12b_1         122 KB
+    libzlib-1.3.1              |       h02ab6af_0          64 KB
+    openssl-3.0.19             |       hbb43b14_0         6.9 MB
+    pip-25.3                   |     pyhc872135_0         1.1 MB
+    python-3.9.25              |       h716150d_1        16.0 MB
+    setuptools-80.9.0          |   py39haa95532_0         1.4 MB
+    sqlite-3.51.1              |       hda9a48d_0         917 KB
+    tk-8.6.15                  |       hf199647_0         3.5 MB
+    tzdata-2025c               |       he532380_0         118 KB
+    ucrt-10.0.22621.0          |       haa95532_0         620 KB
+    vc-14.3                    |      h2df5915_10          19 KB
+    vc14_runtime-14.44.35208   |      h4927774_10         825 KB
+    vs2015_runtime-14.44.35208 |      ha6b5a95_10          19 KB
+    wheel-0.45.1               |   py39haa95532_0         145 KB
+    xz-5.6.4                   |       h4754444_1         280 KB
+    zlib-1.3.1                 |       h02ab6af_0         113 KB
+    ------------------------------------------------------------
+                                           Total:        32.6 MB
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              pkgs/main/win-64::bzip2-1.0.8-h2bbff1b_6
+  ca-certificates    pkgs/main/win-64::ca-certificates-2025.12.2-haa95532_0
+  expat              pkgs/main/win-64::expat-2.7.4-hd7fb8db_0
+  libexpat           pkgs/main/win-64::libexpat-2.7.4-hd7fb8db_0
+  libffi             pkgs/main/win-64::libffi-3.4.4-hd77b12b_1
+  libzlib            pkgs/main/win-64::libzlib-1.3.1-h02ab6af_0
+  openssl            pkgs/main/win-64::openssl-3.0.19-hbb43b14_0
+  pip                pkgs/main/noarch::pip-25.3-pyhc872135_0
+  python             pkgs/main/win-64::python-3.9.25-h716150d_1
+  setuptools         pkgs/main/win-64::setuptools-80.9.0-py39haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.51.1-hda9a48d_0
+  tk                 pkgs/main/win-64::tk-8.6.15-hf199647_0
+  tzdata             pkgs/main/noarch::tzdata-2025c-he532380_0
+  ucrt               pkgs/main/win-64::ucrt-10.0.22621.0-haa95532_0
+  vc                 pkgs/main/win-64::vc-14.3-h2df5915_10
+  vc14_runtime       pkgs/main/win-64::vc14_runtime-14.44.35208-h4927774_10
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.44.35208-ha6b5a95_10
+  wheel              pkgs/main/win-64::wheel-0.45.1-py39haa95532_0
+  xz                 pkgs/main/win-64::xz-5.6.4-h4754444_1
+  zlib               pkgs/main/win-64::zlib-1.3.1-h02ab6af_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate mfa
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\DELL>conda activate mfa
+
+(mfa) C:\Users\DELL>pip install montreal-forced-aligner
+Collecting montreal-forced-aligner
+  Downloading montreal_forced_aligner-3.3.9-py3-none-any.whl.metadata (5.6 kB)
+Collecting click (from montreal-forced-aligner)
+  Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting kneed (from montreal-forced-aligner)
+  Downloading kneed-0.8.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting librosa (from montreal-forced-aligner)
+  Downloading librosa-0.11.0-py3-none-any.whl.metadata (8.7 kB)
+Collecting matplotlib (from montreal-forced-aligner)
+  Downloading matplotlib-3.9.4-cp39-cp39-win_amd64.whl.metadata (11 kB)
+Collecting numpy (from montreal-forced-aligner)
+  Downloading numpy-2.0.2-cp39-cp39-win_amd64.whl.metadata (59 kB)
+Collecting praatio>=6.0.0 (from montreal-forced-aligner)
+  Downloading praatio-6.2.2-py3-none-any.whl.metadata (9.9 kB)
+Collecting pyyaml (from montreal-forced-aligner)
+  Downloading pyyaml-6.0.3-cp39-cp39-win_amd64.whl.metadata (2.4 kB)
+Collecting requests (from montreal-forced-aligner)
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting rich (from montreal-forced-aligner)
+  Downloading rich-14.3.2-py3-none-any.whl.metadata (18 kB)
+Collecting rich-click (from montreal-forced-aligner)
+  Downloading rich_click-1.9.7-py3-none-any.whl.metadata (8.7 kB)
+Collecting scikit-learn (from montreal-forced-aligner)
+  Downloading scikit_learn-1.6.1-cp39-cp39-win_amd64.whl.metadata (15 kB)
+Collecting seaborn (from montreal-forced-aligner)
+  Downloading seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting sqlalchemy>=1.4 (from montreal-forced-aligner)
+  Downloading sqlalchemy-2.0.46-cp39-cp39-win_amd64.whl.metadata (9.8 kB)
+Collecting tqdm (from montreal-forced-aligner)
+  Downloading tqdm-4.67.3-py3-none-any.whl.metadata (57 kB)
+Collecting typing-extensions (from praatio>=6.0.0->montreal-forced-aligner)
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting greenlet>=1 (from sqlalchemy>=1.4->montreal-forced-aligner)
+  Downloading greenlet-3.2.4-cp39-cp39-win_amd64.whl.metadata (4.2 kB)
+Collecting colorama (from click->montreal-forced-aligner)
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting scipy>=1.0.0 (from kneed->montreal-forced-aligner)
+  Downloading scipy-1.13.1-cp39-cp39-win_amd64.whl.metadata (60 kB)
+Collecting audioread>=2.1.9 (from librosa->montreal-forced-aligner)
+  Downloading audioread-3.1.0-py3-none-any.whl.metadata (9.0 kB)
+Collecting numba>=0.51.0 (from librosa->montreal-forced-aligner)
+  Downloading numba-0.60.0-cp39-cp39-win_amd64.whl.metadata (2.8 kB)
+Collecting joblib>=1.0 (from librosa->montreal-forced-aligner)
+  Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting decorator>=4.3.0 (from librosa->montreal-forced-aligner)
+  Downloading decorator-5.2.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting soundfile>=0.12.1 (from librosa->montreal-forced-aligner)
+  Downloading soundfile-0.13.1-py2.py3-none-win_amd64.whl.metadata (16 kB)
+Collecting pooch>=1.1 (from librosa->montreal-forced-aligner)
+  Downloading pooch-1.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting soxr>=0.3.2 (from librosa->montreal-forced-aligner)
+  Downloading soxr-1.0.0-cp39-cp39-win_amd64.whl.metadata (5.6 kB)
+Collecting lazy_loader>=0.1 (from librosa->montreal-forced-aligner)
+  Downloading lazy_loader-0.4-py3-none-any.whl.metadata (7.6 kB)
+Collecting msgpack>=1.0 (from librosa->montreal-forced-aligner)
+  Downloading msgpack-1.1.2-cp39-cp39-win_amd64.whl.metadata (8.4 kB)
+Collecting packaging (from lazy_loader>=0.1->librosa->montreal-forced-aligner)
+  Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting llvmlite<0.44,>=0.43.0dev0 (from numba>=0.51.0->librosa->montreal-forced-aligner)
+  Downloading llvmlite-0.43.0-cp39-cp39-win_amd64.whl.metadata (4.9 kB)
+Collecting platformdirs>=2.5.0 (from pooch>=1.1->librosa->montreal-forced-aligner)
+  Downloading platformdirs-4.4.0-py3-none-any.whl.metadata (12 kB)
+Collecting charset_normalizer<4,>=2 (from requests->montreal-forced-aligner)
+  Downloading charset_normalizer-3.4.4-cp39-cp39-win_amd64.whl.metadata (38 kB)
+Collecting idna<4,>=2.5 (from requests->montreal-forced-aligner)
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->montreal-forced-aligner)
+  Using cached urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2017.4.17 (from requests->montreal-forced-aligner)
+  Using cached certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn->montreal-forced-aligner)
+  Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting cffi>=1.0 (from soundfile>=0.12.1->librosa->montreal-forced-aligner)
+  Downloading cffi-2.0.0-cp39-cp39-win_amd64.whl.metadata (2.6 kB)
+Collecting pycparser (from cffi>=1.0->soundfile>=0.12.1->librosa->montreal-forced-aligner)
+  Using cached pycparser-2.23-py3-none-any.whl.metadata (993 bytes)
+Collecting contourpy>=1.0.1 (from matplotlib->montreal-forced-aligner)
+  Downloading contourpy-1.3.0-cp39-cp39-win_amd64.whl.metadata (5.4 kB)
+Collecting cycler>=0.10 (from matplotlib->montreal-forced-aligner)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib->montreal-forced-aligner)
+  Downloading fonttools-4.60.2-cp39-cp39-win_amd64.whl.metadata (115 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib->montreal-forced-aligner)
+  Downloading kiwisolver-1.4.7-cp39-cp39-win_amd64.whl.metadata (6.4 kB)
+Collecting pillow>=8 (from matplotlib->montreal-forced-aligner)
+  Downloading pillow-11.3.0-cp39-cp39-win_amd64.whl.metadata (9.2 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib->montreal-forced-aligner)
+  Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting python-dateutil>=2.7 (from matplotlib->montreal-forced-aligner)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting importlib-resources>=3.2.0 (from matplotlib->montreal-forced-aligner)
+  Using cached importlib_resources-6.5.2-py3-none-any.whl.metadata (3.9 kB)
+Collecting zipp>=3.1.0 (from importlib-resources>=3.2.0->matplotlib->montreal-forced-aligner)
+  Using cached zipp-3.23.0-py3-none-any.whl.metadata (3.6 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib->montreal-forced-aligner)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting markdown-it-py>=2.2.0 (from rich->montreal-forced-aligner)
+  Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich->montreal-forced-aligner)
+  Using cached pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->montreal-forced-aligner)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting pandas>=1.2 (from seaborn->montreal-forced-aligner)
+  Downloading pandas-2.3.3-cp39-cp39-win_amd64.whl.metadata (19 kB)
+Collecting pytz>=2020.1 (from pandas>=1.2->seaborn->montreal-forced-aligner)
+  Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas>=1.2->seaborn->montreal-forced-aligner)
+  Using cached tzdata-2025.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading montreal_forced_aligner-3.3.9-py3-none-any.whl (417 kB)
+Downloading praatio-6.2.2-py3-none-any.whl (82 kB)
+Downloading sqlalchemy-2.0.46-cp39-cp39-win_amd64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 4.5 MB/s  0:00:00
+Downloading greenlet-3.2.4-cp39-cp39-win_amd64.whl (298 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading click-8.1.8-py3-none-any.whl (98 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading kneed-0.8.5-py3-none-any.whl (10 kB)
+Downloading numpy-2.0.2-cp39-cp39-win_amd64.whl (15.9 MB)
+   ━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/15.9 MB 4.8 MB/s eta 0:00:03ERROR: Could not install packages due to an OSError: [Errno 28] No space left on device
+
+   ━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/15.9 MB 4.8 MB/s eta 0:00:03
+
+(mfa) C:\Users\DELL>pip install montreal-forced-aligner
+Collecting montreal-forced-aligner
+  Using cached montreal_forced_aligner-3.3.9-py3-none-any.whl.metadata (5.6 kB)
+Collecting click (from montreal-forced-aligner)
+  Using cached click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting kneed (from montreal-forced-aligner)
+  Using cached kneed-0.8.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting librosa (from montreal-forced-aligner)
+  Using cached librosa-0.11.0-py3-none-any.whl.metadata (8.7 kB)
+Collecting matplotlib (from montreal-forced-aligner)
+  Using cached matplotlib-3.9.4-cp39-cp39-win_amd64.whl.metadata (11 kB)
+Collecting numpy (from montreal-forced-aligner)
+  Using cached numpy-2.0.2-cp39-cp39-win_amd64.whl.metadata (59 kB)
+Collecting praatio>=6.0.0 (from montreal-forced-aligner)
+  Using cached praatio-6.2.2-py3-none-any.whl.metadata (9.9 kB)
+Collecting pyyaml (from montreal-forced-aligner)
+  Using cached pyyaml-6.0.3-cp39-cp39-win_amd64.whl.metadata (2.4 kB)
+Collecting requests (from montreal-forced-aligner)
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting rich (from montreal-forced-aligner)
+  Using cached rich-14.3.2-py3-none-any.whl.metadata (18 kB)
+Collecting rich-click (from montreal-forced-aligner)
+  Using cached rich_click-1.9.7-py3-none-any.whl.metadata (8.7 kB)
+Collecting scikit-learn (from montreal-forced-aligner)
+  Using cached scikit_learn-1.6.1-cp39-cp39-win_amd64.whl.metadata (15 kB)
+Collecting seaborn (from montreal-forced-aligner)
+  Using cached seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting sqlalchemy>=1.4 (from montreal-forced-aligner)
+  Using cached sqlalchemy-2.0.46-cp39-cp39-win_amd64.whl.metadata (9.8 kB)
+Collecting tqdm (from montreal-forced-aligner)
+  Using cached tqdm-4.67.3-py3-none-any.whl.metadata (57 kB)
+Collecting typing-extensions (from praatio>=6.0.0->montreal-forced-aligner)
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting greenlet>=1 (from sqlalchemy>=1.4->montreal-forced-aligner)
+  Using cached greenlet-3.2.4-cp39-cp39-win_amd64.whl.metadata (4.2 kB)
+Collecting colorama (from click->montreal-forced-aligner)
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting scipy>=1.0.0 (from kneed->montreal-forced-aligner)
+  Using cached scipy-1.13.1-cp39-cp39-win_amd64.whl.metadata (60 kB)
+Collecting audioread>=2.1.9 (from librosa->montreal-forced-aligner)
+  Using cached audioread-3.1.0-py3-none-any.whl.metadata (9.0 kB)
+Collecting numba>=0.51.0 (from librosa->montreal-forced-aligner)
+  Using cached numba-0.60.0-cp39-cp39-win_amd64.whl.metadata (2.8 kB)
+Collecting joblib>=1.0 (from librosa->montreal-forced-aligner)
+  Using cached joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting decorator>=4.3.0 (from librosa->montreal-forced-aligner)
+  Using cached decorator-5.2.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting soundfile>=0.12.1 (from librosa->montreal-forced-aligner)
+  Using cached soundfile-0.13.1-py2.py3-none-win_amd64.whl.metadata (16 kB)
+Collecting pooch>=1.1 (from librosa->montreal-forced-aligner)
+  Using cached pooch-1.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting soxr>=0.3.2 (from librosa->montreal-forced-aligner)
+  Using cached soxr-1.0.0-cp39-cp39-win_amd64.whl.metadata (5.6 kB)
+Collecting lazy_loader>=0.1 (from librosa->montreal-forced-aligner)
+  Using cached lazy_loader-0.4-py3-none-any.whl.metadata (7.6 kB)
+Collecting msgpack>=1.0 (from librosa->montreal-forced-aligner)
+  Using cached msgpack-1.1.2-cp39-cp39-win_amd64.whl.metadata (8.4 kB)
+Collecting packaging (from lazy_loader>=0.1->librosa->montreal-forced-aligner)
+  Using cached packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting llvmlite<0.44,>=0.43.0dev0 (from numba>=0.51.0->librosa->montreal-forced-aligner)
+  Using cached llvmlite-0.43.0-cp39-cp39-win_amd64.whl.metadata (4.9 kB)
+Collecting platformdirs>=2.5.0 (from pooch>=1.1->librosa->montreal-forced-aligner)
+  Using cached platformdirs-4.4.0-py3-none-any.whl.metadata (12 kB)
+Collecting charset_normalizer<4,>=2 (from requests->montreal-forced-aligner)
+  Using cached charset_normalizer-3.4.4-cp39-cp39-win_amd64.whl.metadata (38 kB)
+Collecting idna<4,>=2.5 (from requests->montreal-forced-aligner)
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->montreal-forced-aligner)
+  Using cached urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2017.4.17 (from requests->montreal-forced-aligner)
+  Using cached certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn->montreal-forced-aligner)
+  Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting cffi>=1.0 (from soundfile>=0.12.1->librosa->montreal-forced-aligner)
+  Using cached cffi-2.0.0-cp39-cp39-win_amd64.whl.metadata (2.6 kB)
+Collecting pycparser (from cffi>=1.0->soundfile>=0.12.1->librosa->montreal-forced-aligner)
+  Using cached pycparser-2.23-py3-none-any.whl.metadata (993 bytes)
+Collecting contourpy>=1.0.1 (from matplotlib->montreal-forced-aligner)
+  Using cached contourpy-1.3.0-cp39-cp39-win_amd64.whl.metadata (5.4 kB)
+Collecting cycler>=0.10 (from matplotlib->montreal-forced-aligner)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib->montreal-forced-aligner)
+  Using cached fonttools-4.60.2-cp39-cp39-win_amd64.whl.metadata (115 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib->montreal-forced-aligner)
+  Using cached kiwisolver-1.4.7-cp39-cp39-win_amd64.whl.metadata (6.4 kB)
+Collecting pillow>=8 (from matplotlib->montreal-forced-aligner)
+  Using cached pillow-11.3.0-cp39-cp39-win_amd64.whl.metadata (9.2 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib->montreal-forced-aligner)
+  Using cached pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting python-dateutil>=2.7 (from matplotlib->montreal-forced-aligner)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting importlib-resources>=3.2.0 (from matplotlib->montreal-forced-aligner)
+  Using cached importlib_resources-6.5.2-py3-none-any.whl.metadata (3.9 kB)
+Collecting zipp>=3.1.0 (from importlib-resources>=3.2.0->matplotlib->montreal-forced-aligner)
+  Using cached zipp-3.23.0-py3-none-any.whl.metadata (3.6 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib->montreal-forced-aligner)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting markdown-it-py>=2.2.0 (from rich->montreal-forced-aligner)
+  Using cached markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich->montreal-forced-aligner)
+  Using cached pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->montreal-forced-aligner)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting pandas>=1.2 (from seaborn->montreal-forced-aligner)
+  Using cached pandas-2.3.3-cp39-cp39-win_amd64.whl.metadata (19 kB)
+Collecting pytz>=2020.1 (from pandas>=1.2->seaborn->montreal-forced-aligner)
+  Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas>=1.2->seaborn->montreal-forced-aligner)
+  Using cached tzdata-2025.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Using cached montreal_forced_aligner-3.3.9-py3-none-any.whl (417 kB)
+Using cached praatio-6.2.2-py3-none-any.whl (82 kB)
+Downloading sqlalchemy-2.0.46-cp39-cp39-win_amd64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 4.8 MB/s  0:00:00
+Using cached greenlet-3.2.4-cp39-cp39-win_amd64.whl (298 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Using cached click-8.1.8-py3-none-any.whl (98 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached kneed-0.8.5-py3-none-any.whl (10 kB)
+Downloading numpy-2.0.2-cp39-cp39-win_amd64.whl (15.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 3.9 MB/s  0:00:04
+Downloading scipy-1.13.1-cp39-cp39-win_amd64.whl (46.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.2/46.2 MB 3.5 MB/s  0:00:13
+Downloading librosa-0.11.0-py3-none-any.whl (260 kB)
+Downloading audioread-3.1.0-py3-none-any.whl (23 kB)
+Downloading decorator-5.2.1-py3-none-any.whl (9.2 kB)
+Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+Downloading lazy_loader-0.4-py3-none-any.whl (12 kB)
+Downloading msgpack-1.1.2-cp39-cp39-win_amd64.whl (71 kB)
+Downloading numba-0.60.0-cp39-cp39-win_amd64.whl (2.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 3.9 MB/s  0:00:00
+Downloading llvmlite-0.43.0-cp39-cp39-win_amd64.whl (28.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.1/28.1 MB 3.9 MB/s  0:00:07
+Downloading pooch-1.9.0-py3-none-any.whl (67 kB)
+Downloading packaging-26.0-py3-none-any.whl (74 kB)
+Downloading platformdirs-4.4.0-py3-none-any.whl (18 kB)
+Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.4-cp39-cp39-win_amd64.whl (107 kB)
+Using cached idna-3.11-py3-none-any.whl (71 kB)
+Using cached urllib3-2.6.3-py3-none-any.whl (131 kB)
+Using cached certifi-2026.1.4-py3-none-any.whl (152 kB)
+Downloading scikit_learn-1.6.1-cp39-cp39-win_amd64.whl (11.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.2/11.2 MB 3.5 MB/s  0:00:03
+Downloading soundfile-0.13.1-py2.py3-none-win_amd64.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 3.5 MB/s  0:00:00
+Downloading cffi-2.0.0-cp39-cp39-win_amd64.whl (182 kB)
+Downloading soxr-1.0.0-cp39-cp39-win_amd64.whl (174 kB)
+Using cached threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading matplotlib-3.9.4-cp39-cp39-win_amd64.whl (7.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.8/7.8 MB 3.6 MB/s  0:00:02
+Downloading contourpy-1.3.0-cp39-cp39-win_amd64.whl (211 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.60.2-cp39-cp39-win_amd64.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 3.6 MB/s  0:00:00
+Using cached importlib_resources-6.5.2-py3-none-any.whl (37 kB)
+Downloading kiwisolver-1.4.7-cp39-cp39-win_amd64.whl (55 kB)
+Downloading pillow-11.3.0-cp39-cp39-win_amd64.whl (7.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 3.7 MB/s  0:00:01
+Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached zipp-3.23.0-py3-none-any.whl (10 kB)
+Using cached pycparser-2.23-py3-none-any.whl (118 kB)
+Downloading pyyaml-6.0.3-cp39-cp39-win_amd64.whl (158 kB)
+Downloading rich-14.3.2-py3-none-any.whl (309 kB)
+Using cached pygments-2.19.2-py3-none-any.whl (1.2 MB)
+Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading rich_click-1.9.7-py3-none-any.whl (71 kB)
+Downloading seaborn-0.13.2-py3-none-any.whl (294 kB)
+Downloading pandas-2.3.3-cp39-cp39-win_amd64.whl (11.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.4/11.4 MB 3.7 MB/s  0:00:03
+Using cached pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Using cached tzdata-2025.3-py2.py3-none-any.whl (348 kB)
+Downloading tqdm-4.67.3-py3-none-any.whl (78 kB)
+Installing collected packages: pytz, zipp, urllib3, tzdata, typing-extensions, threadpoolctl, six, pyyaml, pyparsing, pygments, pycparser, platformdirs, pillow, packaging, numpy, msgpack, mdurl, llvmlite, kiwisolver, joblib, idna, greenlet, fonttools, decorator, cycler, colorama, charset_normalizer, certifi, audioread, tqdm, sqlalchemy, soxr, scipy, requests, python-dateutil, praatio, numba, markdown-it-py, lazy_loader, importlib-resources, contourpy, click, cffi, soundfile, scikit-learn, rich, pooch, pandas, matplotlib, kneed, seaborn, rich-click, librosa, montreal-forced-aligner
+Successfully installed audioread-3.1.0 certifi-2026.1.4 cffi-2.0.0 charset_normalizer-3.4.4 click-8.1.8 colorama-0.4.6 contourpy-1.3.0 cycler-0.12.1 decorator-5.2.1 fonttools-4.60.2 greenlet-3.2.4 idna-3.11 importlib-resources-6.5.2 joblib-1.5.3 kiwisolver-1.4.7 kneed-0.8.5 lazy_loader-0.4 librosa-0.11.0 llvmlite-0.43.0 markdown-it-py-3.0.0 matplotlib-3.9.4 mdurl-0.1.2 montreal-forced-aligner-3.3.9 msgpack-1.1.2 numba-0.60.0 numpy-2.0.2 packaging-26.0 pandas-2.3.3 pillow-11.3.0 platformdirs-4.4.0 pooch-1.9.0 praatio-6.2.2 pycparser-2.23 pygments-2.19.2 pyparsing-3.3.2 python-dateutil-2.9.0.post0 pytz-2025.2 pyyaml-6.0.3 requests-2.32.5 rich-14.3.2 rich-click-1.9.7 scikit-learn-1.6.1 scipy-1.13.1 seaborn-0.13.2 six-1.17.0 soundfile-0.13.1 soxr-1.0.0 sqlalchemy-2.0.46 threadpoolctl-3.6.0 tqdm-4.67.3 typing-extensions-4.15.0 tzdata-2025.3 urllib3-2.6.3 zipp-3.23.0
+
+(mfa) C:\Users\DELL>mfa version
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\DELL\anaconda3\envs\mfa\Scripts\mfa.exe\__main__.py", line 2, in <module>
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\__init__.py", line 4, in <module>
+    import montreal_forced_aligner.acoustic_modeling as acoustic_modeling
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\acoustic_modeling\__init__.py", line 7, in <module>
+    from montreal_forced_aligner.acoustic_modeling.base import AcousticModelTrainingMixin  # noqa
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\acoustic_modeling\base.py", line 12, in <module>
+    from _kalpy.gmm import AccumAmDiagGmm
+ModuleNotFoundError: No module named '_kalpy'
+
+(mfa) C:\Users\DELL>pip uninstall montreal-forced-aligner -y
+Found existing installation: Montreal_Forced_Aligner 3.3.9
+Uninstalling Montreal_Forced_Aligner-3.3.9:
+  Successfully uninstalled Montreal_Forced_Aligner-3.3.9
+
+(mfa) C:\Users\DELL>conda install -c conda-forge montreal-forced-aligner
+Collecting package metadata (current_repodata.json): done
+Solving environment: unsuccessful initial attempt using frozen solve. Retrying with flexible solve.
+Solving environment: unsuccessful attempt using repodata from current_repodata.json, retrying with next repodata source.
+Collecting package metadata (repodata.json): failed
+
+NoSpaceLeftError: No space left on devices.
+
+
+(mfa) C:\Users\DELL>
+
+(mfa) C:\Users\DELL>
+
+(mfa) C:\Users\DELL>
+
+(mfa) C:\Users\DELL>where conda
+C:\Users\DELL\anaconda3\condabin\conda.bat
+
+(mfa) C:\Users\DELL>conda info
+
+     active environment : mfa
+    active env location : C:\Users\DELL\anaconda3\envs\mfa
+            shell level : 2
+       user config file : C:\Users\DELL\.condarc
+ populated config files : C:\Users\DELL\.condarc
+          conda version : 23.7.4
+    conda-build version : 3.26.1
+         python version : 3.11.5.final.0
+       virtual packages : __archspec=1=x86_64
+                          __cuda=12.9=0
+                          __win=0=0
+       base environment : C:\Users\DELL\anaconda3  (writable)
+      conda av data dir : C:\Users\DELL\anaconda3\etc\conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/win-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/win-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+                          https://repo.anaconda.com/pkgs/msys2/win-64
+                          https://repo.anaconda.com/pkgs/msys2/noarch
+          package cache : C:\Users\DELL\anaconda3\pkgs
+                          C:\Users\DELL\.conda\pkgs
+                          C:\Users\DELL\AppData\Local\conda\conda\pkgs
+       envs directories : C:\Users\DELL\anaconda3\envs
+                          C:\Users\DELL\.conda\envs
+                          C:\Users\DELL\AppData\Local\conda\conda\envs
+               platform : win-64
+             user-agent : conda/23.7.4 requests/2.31.0 CPython/3.11.5 Windows/10 Windows/10.0.22631 aau/0.4.2 c/UgmIoo6miryxDtRVC_hZVw s/Q3LwAJBu0DzCKvvz2Dg4uA e/8bLZebagQDumEuRT8yTrpw
+          administrator : False
+             netrc file : None
+           offline mode : False
+
+
+
+(mfa) C:\Users\DELL>conda clean --all
+Will remove 509 (1.03 GB) tarball(s).
+Proceed ([y]/n)? y
+
+Will remove 1 index cache(s).
+Proceed ([y]/n)? y
+
+Will remove 14 (1.1 MB) package(s).
+Proceed ([y]/n)? y
+
+There are no tempfile(s) to remove.
+There are no logfile(s) to remove.
+
+(mfa) C:\Users\DELL>conda install -c conda-forge montreal-forced-aligner
+Collecting package metadata (current_repodata.json): done
+Solving environment: unsuccessful initial attempt using frozen solve. Retrying with flexible solve.
+Solving environment: unsuccessful attempt using repodata from current_repodata.json, retrying with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: | *** picosat: out of memory in 'resize'
+
+(mfa) C:\Users\DELL>conda deactivate
+
+(base) C:\Users\DELL>conda remove -n mfa --all
+
+Remove all packages in environment C:\Users\DELL\anaconda3\envs\mfa:
+
+
+## Package Plan ##
+
+  environment location: C:\Users\DELL\anaconda3\envs\mfa
+
+
+The following packages will be REMOVED:
+
+  bzip2-1.0.8-h2bbff1b_6
+  ca-certificates-2025.12.2-haa95532_0
+  expat-2.7.4-hd7fb8db_0
+  libexpat-2.7.4-hd7fb8db_0
+  libffi-3.4.4-hd77b12b_1
+  libzlib-1.3.1-h02ab6af_0
+  openssl-3.0.19-hbb43b14_0
+  pip-25.3-pyhc872135_0
+  python-3.9.25-h716150d_1
+  setuptools-80.9.0-py39haa95532_0
+  sqlite-3.51.1-hda9a48d_0
+  tk-8.6.15-hf199647_0
+  tzdata-2025c-he532380_0
+  ucrt-10.0.22621.0-haa95532_0
+  vc-14.3-h2df5915_10
+  vc14_runtime-14.44.35208-h4927774_10
+  vs2015_runtime-14.44.35208-ha6b5a95_10
+  wheel-0.45.1-py39haa95532_0
+  xz-5.6.4-h4754444_1
+  zlib-1.3.1-h02ab6af_0
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+(base) C:\Users\DELL>conda create -n mfa python=3.9 --no-default-packages
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.7.4
+  latest version: 26.1.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=26.1.0
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\DELL\anaconda3\envs\mfa
+
+  added / updated specs:
+    - python=3.9
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    vc-14.3                    |      h2df5915_10          19 KB
+    vs2015_runtime-14.44.35208 |      ha6b5a95_10          19 KB
+    ------------------------------------------------------------
+                                           Total:          38 KB
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              pkgs/main/win-64::bzip2-1.0.8-h2bbff1b_6
+  ca-certificates    pkgs/main/win-64::ca-certificates-2025.12.2-haa95532_0
+  expat              pkgs/main/win-64::expat-2.7.4-hd7fb8db_0
+  libexpat           pkgs/main/win-64::libexpat-2.7.4-hd7fb8db_0
+  libffi             pkgs/main/win-64::libffi-3.4.4-hd77b12b_1
+  libzlib            pkgs/main/win-64::libzlib-1.3.1-h02ab6af_0
+  openssl            pkgs/main/win-64::openssl-3.0.19-hbb43b14_0
+  pip                pkgs/main/noarch::pip-25.3-pyhc872135_0
+  python             pkgs/main/win-64::python-3.9.25-h716150d_1
+  setuptools         pkgs/main/win-64::setuptools-80.9.0-py39haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.51.1-hda9a48d_0
+  tk                 pkgs/main/win-64::tk-8.6.15-hf199647_0
+  tzdata             pkgs/main/noarch::tzdata-2025c-he532380_0
+  ucrt               pkgs/main/win-64::ucrt-10.0.22621.0-haa95532_0
+  vc                 pkgs/main/win-64::vc-14.3-h2df5915_10
+  vc14_runtime       pkgs/main/win-64::vc14_runtime-14.44.35208-h4927774_10
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.44.35208-ha6b5a95_10
+  wheel              pkgs/main/win-64::wheel-0.45.1-py39haa95532_0
+  xz                 pkgs/main/win-64::xz-5.6.4-h4754444_1
+  zlib               pkgs/main/win-64::zlib-1.3.1-h02ab6af_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate mfa
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\DELL>conda activate mfa
+
+(mfa) C:\Users\DELL>conda install -n base -c conda-forge mamba
+Collecting package metadata (current_repodata.json): done
+Solving environment: unsuccessful initial attempt using frozen solve. Retrying with flexible solve.
+Solving environment: unsuccessful attempt using repodata from current_repodata.json, retrying with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.7.4
+  latest version: 26.1.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=26.1.0
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\DELL\anaconda3
+
+  added / updated specs:
+    - mamba
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    anaconda-cloud-auth-0.5.0  |     pyhd8ed1ab_1          25 KB  conda-forge
+    ca-certificates-2026.1.4   |       h4c7d964_0         144 KB  conda-forge
+    certifi-2026.1.4           |     pyhd8ed1ab_0         147 KB  conda-forge
+    conda-23.7.4               |  py311h1ea47a8_0         1.3 MB  conda-forge
+    curl-8.9.1                 |       h3f729d1_0         176 KB
+    libcurl-8.9.1              |       h0416ee5_0         372 KB
+    libmamba-1.5.0             |       ha24f096_0         3.4 MB  conda-forge
+    libmambapy-1.5.0           |  py311h29ee5fe_0         231 KB  conda-forge
+    mamba-1.5.0                |  py311h8cb466b_0          81 KB  conda-forge
+    openssl-3.5.0              |       ha4e3fda_1         8.6 MB  conda-forge
+    python_abi-3.11            |          2_cp311           5 KB  conda-forge
+    semver-3.0.4               |     pyhcf101f3_1          22 KB  conda-forge
+    ucrt-10.0.26100.0          |       h57928b3_0         678 KB  conda-forge
+    vc14_runtime-14.44.35208   |      h818238b_34         667 KB  conda-forge
+    vcomp14-14.44.35208        |      h818238b_34         113 KB  conda-forge
+    vs2015_runtime-14.44.35208 |      h38c0c73_34          19 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        15.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  mamba              conda-forge/win-64::mamba-1.5.0-py311h8cb466b_0
+  python_abi         conda-forge/win-64::python_abi-3.11-2_cp311
+  semver             conda-forge/noarch::semver-3.0.4-pyhcf101f3_1
+  ucrt               conda-forge/win-64::ucrt-10.0.26100.0-h57928b3_0
+  vc14_runtime       conda-forge/win-64::vc14_runtime-14.44.35208-h818238b_34
+  vcomp14            conda-forge/win-64::vcomp14-14.44.35208-h818238b_34
+
+The following packages will be UPDATED:
+
+  anaconda-cloud-au~ pkgs/main/win-64::anaconda-cloud-auth~ --> conda-forge/noarch::anaconda-cloud-auth-0.5.0-pyhd8ed1ab_1
+  ca-certificates    pkgs/main/win-64::ca-certificates-202~ --> conda-forge/noarch::ca-certificates-2026.1.4-h4c7d964_0
+  certifi            pkgs/main/win-64::certifi-2023.7.22-p~ --> conda-forge/noarch::certifi-2026.1.4-pyhd8ed1ab_0
+  curl                                     8.1.1-h2bbff1b_0 --> 8.9.1-h3f729d1_0
+  libcurl                                  8.1.1-h86230a5_0 --> 8.9.1-h0416ee5_0
+  openssl              pkgs/main::openssl-3.0.10-h2bbff1b_2 --> conda-forge::openssl-3.5.0-ha4e3fda_1
+  vs2015_runtime     pkgs/main::vs2015_runtime-14.27.29016~ --> conda-forge::vs2015_runtime-14.44.35208-h38c0c73_34
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  conda              pkgs/main::conda-23.7.4-py311haa95532~ --> conda-forge::conda-23.7.4-py311h1ea47a8_0
+  libmamba             pkgs/main::libmamba-1.5.1-hcd6fe79_0 --> conda-forge::libmamba-1.5.0-ha24f096_0
+  libmambapy         pkgs/main::libmambapy-1.5.1-py311h77c~ --> conda-forge::libmambapy-1.5.0-py311h29ee5fe_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+(mfa) C:\Users\DELL>mfa version
+'mfa' is not recognized as an internal or external command,
+operable program or batch file.
+
+(mfa) C:\Users\DELL>mamba install -c conda-forge montreal-forced-aligner
+Error while loading conda entry point: anaconda-cloud-auth (cannot import name 'ChannelAuthBase' from 'conda.plugins.types' (C:\Users\DELL\anaconda3\Lib\site-packages\conda\plugins\types.py))
+Error while loading conda entry point: anaconda-cloud-auth (cannot import name 'ChannelAuthBase' from 'conda.plugins.types' (C:\Users\DELL\anaconda3\Lib\site-packages\conda\plugins\types.py))
+
+Looking for: ['montreal-forced-aligner']
+
+warning  libmamba Could not parse mod/etag header
+warning  libmamba Could not parse mod/etag header
+warning  libmamba Could not parse mod/etag header
+pkgs/main/win-64 (check zst)                        Checked  0.4s
+warning  libmamba Could not parse mod/etag header
+pkgs/main/noarch (check zst)                        Checked  0.1s
+warning  libmamba Could not parse mod/etag header
+pkgs/r/win-64 (check zst)                           Checked  0.0s
+warning  libmamba Could not parse mod/etag header
+pkgs/r/noarch (check zst)                           Checked  0.1s
+warning  libmamba Could not parse mod/etag header
+pkgs/msys2/win-64 (check zst)                       Checked  0.1s
+warning  libmamba Could not parse mod/etag header
+pkgs/msys2/noarch (check zst)                       Checked  0.1s
+pkgs/r/win-64                                      633.4kB @ 300.7kB/s  2.1s
+pkgs/main/noarch                                   814.7kB @ 384.1kB/s  2.1s
+pkgs/msys2/win-64                                   35.1kB @  14.9kB/s  0.2s
+pkgs/msys2/noarch                                  103.0 B @  40.0 B/s  0.5s
+pkgs/main/win-64                                     9.0MB @   1.9MB/s  4.7s
+pkgs/r/noarch                                        2.0MB @ 377.9kB/s  3.1s
+conda-forge/win-64                                  32.8MB @   1.8MB/s 18.5s
+conda-forge/noarch                                  24.5MB @   1.3MB/s 18.7s
+
+Pinned packages:
+  - python 3.9.*
+
+
+Transaction
+
+  Prefix: C:\Users\DELL\anaconda3\envs\mfa
+
+  Updating specs:
+
+   - montreal-forced-aligner
+   - ca-certificates
+   - openssl
+
+
+  Package                                    Version  Build                  Channel           Size
+-----------------------------------------------------------------------------------------------------
+  Install:
+-----------------------------------------------------------------------------------------------------
+
+  + dataclassy                                 1.0.1  pyhd8ed1ab_0           conda-forge       32kB
+  + decorator                                  5.2.1  pyhd8ed1ab_0           conda-forge       14kB
+  + joblib                                     1.5.1  pyhd8ed1ab_0           conda-forge      224kB
+  + packaging                                   26.0  pyhcf101f3_0           conda-forge       72kB
+  + typing_extensions                         4.14.1  pyhe01879c_0           conda-forge       51kB
+  + zipp                                      3.23.0  pyhd8ed1ab_0           conda-forge       23kB
+  + threadpoolctl                              3.6.0  pyhecae5ae_0           conda-forge       24kB
+  + certifi                                 2025.8.3  pyhd8ed1ab_0           conda-forge      159kB
+  + cycler                                    0.12.1  pyhd8ed1ab_1           conda-forge       13kB
+  + pyparsing                                  3.2.3  pyhe01879c_2           conda-forge      102kB
+  + munkres                                    1.1.4  pyhd8ed1ab_1           conda-forge       16kB
+  + colorama                                   0.4.6  pyhd8ed1ab_1           conda-forge       27kB
+  + pygments                                  2.19.2  pyhd8ed1ab_0           conda-forge      889kB
+  + idna                                        3.10  pyhd8ed1ab_1           conda-forge       50kB
+  + charset-normalizer                         3.4.3  pyhd8ed1ab_0           conda-forge       51kB
+  + six                                       1.17.0  pyhe01879c_1           conda-forge       18kB
+  + platformdirs                               4.3.8  pyhe01879c_0           conda-forge       24kB
+  + mdurl                                      0.1.2  pyhd8ed1ab_1           conda-forge       14kB
+  + pycparser                                   2.22  pyh29332c3_1           conda-forge      110kB
+  + win_inet_pton                              1.1.0  pyh7428d3b_8           conda-forge       10kB
+  + hpack                                      4.1.0  pyhd8ed1ab_0           conda-forge       31kB
+  + hyperframe                                 6.1.0  pyhd8ed1ab_0           conda-forge       17kB
+  + font-ttf-dejavu-sans-mono                   2.37  hab24e00_0             conda-forge      397kB
+  + font-ttf-inconsolata                       3.000  h77eed37_0             conda-forge       97kB
+  + font-ttf-source-code-pro                   2.038  h77eed37_0             conda-forge      701kB
+  + font-ttf-ubuntu                             0.83  h77eed37_3             conda-forge        2MB
+  + typing-extensions                         4.14.1  h4440ef1_0             conda-forge       90kB
+  + importlib_resources                        6.5.2  pyhd8ed1ab_0           conda-forge       34kB
+  + importlib-metadata                         8.7.0  pyhe01879c_1           conda-forge       35kB
+  + click                                      8.1.8  pyh7428d3b_0           conda-forge       85kB
+  + tqdm                                      4.67.1  pyhd8ed1ab_1           conda-forge       89kB
+  + python-dateutil                      2.9.0.post0  pyhe01879c_2           conda-forge      233kB
+  + markdown-it-py                             3.0.0  pyhd8ed1ab_1           conda-forge       64kB
+  + pysocks                                    1.7.1  pyh09c184e_7           conda-forge       22kB
+  + h2                                         4.2.0  pyhd8ed1ab_0           conda-forge       54kB
+  + fonts-conda-forge                              1  hc364b38_1             conda-forge        4kB
+  + praatio                                    6.2.0  pyhd8ed1ab_1           conda-forge       62kB
+  + importlib-resources                        6.5.2  pyhd8ed1ab_0           conda-forge       10kB
+  + lazy-loader                                  0.4  pyhd8ed1ab_2           conda-forge       16kB
+  + rich                                      14.1.0  pyhe01879c_0           conda-forge      201kB
+  + fonts-conda-ecosystem                          1  0                      conda-forge        4kB
+  + lazy_loader                                  0.4  pyhd8ed1ab_2           conda-forge        7kB
+  + rich-click                                 1.8.9  pyhd8ed1ab_0           conda-forge       35kB
+  + icu                                         75.1  he0c23c2_0             conda-forge       15MB
+  + x265                                         3.5  h2d74725_3             conda-forge        6MB
+  + aom                                        3.9.1  he0c23c2_0             conda-forge        2MB
+  + openh264                                   2.5.0  ha9db3cd_0             conda-forge      410kB
+  + svt-av1                                    2.3.0  he0c23c2_0             conda-forge        2MB
+  + python_abi                                   3.9  2_cp39                 conda-forge        5kB
+  + soxr                                       0.1.3  hcfcfb64_3             conda-forge      112kB
+  + lame                                       3.100  hcfcfb64_1003          conda-forge      571kB
+  + libmad                                   0.15.1b  hcfcfb64_1001          conda-forge       93kB
+  + libopus                                    1.6.1  h6a83c73_0             conda-forge      307kB
+  + libpng                                    1.6.54  h7351971_0             conda-forge      383kB
+  + yaml                                       0.2.5  h6a83c73_3             conda-forge       64kB
+  + lz4-c                                     1.10.0  h2466b09_1             conda-forge      140kB
+  + zstd                                       1.5.7  h534d264_6             conda-forge      388kB
+  + dlfcn-win32                                1.4.2  hac47afa_0             conda-forge       19kB
+  + qhull                                     2020.2  hc790b64_5             conda-forge        1MB
+  + libiconv                                    1.18  hc1393d2_2             conda-forge      697kB
+  + libwinpthread              12.0.0.r4.gg4f2fc60ca  h57928b3_10            conda-forge       37kB
+  + libogg                                     1.3.5  h2466b09_1             conda-forge       35kB
+  + mpg123                                    1.32.9  h01009b0_0             conda-forge      274kB
+  + llvm-openmp                               21.1.8  h4fa8253_0             conda-forge      348kB
+  + libbrotlicommon                            1.2.0  hfd05255_1             conda-forge       82kB
+  + x264                                  1!164.3095  h8ffe710_2             conda-forge        1MB
+  + dav1d                                      1.2.1  hcfcfb64_0             conda-forge      619kB
+  + libjpeg-turbo                              3.1.2  hfd05255_0             conda-forge      842kB
+  + libdeflate                                  1.22  h2466b09_0             conda-forge      156kB
+  + libwebp-base                               1.6.0  h4d5522a_0             conda-forge      279kB
+  + lerc                                       4.0.0  h6470a55_1             conda-forge      165kB
+  + graphite2                                 1.3.14  hac47afa_2             conda-forge       96kB
+  + pixman                                    0.46.4  h5112557_1             conda-forge      543kB
+  + fribidi                                   1.0.16  hfd05255_0             conda-forge       64kB
+  + getopt-win32                                 0.1  h6a83c73_3             conda-forge       26kB
+  + pcre2                                      10.46  h3402e2f_0             conda-forge        1MB
+  + brotli-python                              1.0.9  py39h99910a6_8         conda-forge      343kB
+  + cffi                                      1.17.1  py39ha55e580_0         conda-forge      237kB
+  + unicodedata2                              16.0.0  py39ha55e580_0         conda-forge      400kB
+  + kiwisolver                                 1.4.7  py39h2b77a98_0         conda-forge       56kB
+  + llvmlite                                  0.43.0  py39he94c479_1         conda-forge       17MB
+  + greenlet                                   3.2.4  py39hdb6649d_0         conda-forge      200kB
+  + standard-sunau                            3.13.0  py39hcbf5309_2         conda-forge       19kB
+  + standard-aifc                             3.13.0  py39hcbf5309_2         conda-forge       25kB
+  + msgpack-python                             1.1.1  py39h2b77a98_0         conda-forge       81kB
+  + audioread                                  3.0.1  py39hcbf5309_2         conda-forge       37kB
+  + libfreetype6                              2.14.1  hdbac1cb_0             conda-forge      340kB
+  + pyyaml                                     6.0.2  py39hf73967f_2         conda-forge      157kB
+  + openfst                                    1.8.3  hc790b64_3             conda-forge        3MB
+  + libintl                                   0.22.5  h5728263_3             conda-forge       96kB
+  + libxml2                                   2.13.9  h741aa76_0             conda-forge        2MB
+  + libgomp                                   15.2.0  h8ee18e1_17            conda-forge      664kB
+  + libvorbis                                  1.3.7  h5112557_2             conda-forge      243kB
+  + libflac                                    1.4.3  h63175ca_0             conda-forge      331kB
+  + libbrotlienc                               1.2.0  hfd05255_1             conda-forge      253kB
+  + libbrotlidec                               1.2.0  hfd05255_1             conda-forge       34kB
+  + libtiff                                    4.7.0  hfc51747_1             conda-forge      979kB
+  + krb5                                      1.21.3  hdf4eb48_0             conda-forge      712kB
+  + zstandard                                 0.23.0  py39h0802e32_3         conda-forge      333kB
+  + sqlalchemy                                2.0.43  py39h0802e32_0         conda-forge        3MB
+  + libfreetype                               2.14.1  h57928b3_0             conda-forge        8kB
+  + ngram                                     1.3.16  hc790b64_1             conda-forge        4MB
+  + baumwelch                                  0.3.9  hd620369_3             conda-forge        1MB
+  + libhwloc                                  2.12.1  default_h88281d1_1000  conda-forge        2MB
+  + libxslt                                   1.1.43  h25c3957_0             conda-forge      417kB
+  + _openmp_mutex                                4.5  2_gnu                  conda-forge       49kB
+  + libsndfile                                 1.2.2  h81429f1_1             conda-forge      337kB
+  + brotli-bin                                 1.2.0  hfd05255_1             conda-forge       23kB
+  + openjpeg                                   2.5.3  h24db6dd_1             conda-forge      245kB
+  + lcms2                                       2.17  hbcf6048_0             conda-forge      511kB
+  + libpq                                       17.6  h063c6db_1             conda-forge        4MB
+  + freetype                                  2.14.1  h57928b3_0             conda-forge      185kB
+  + tbb                                     2022.3.0  hd094cb3_1             conda-forge      156kB
+  + libgcc                                    15.2.0  h8ee18e1_17            conda-forge      822kB
+  + sox                                       14.4.2  h39259cc_1019          conda-forge      724kB
+  + brotli                                     1.2.0  h2d644bc_1             conda-forge       20kB
+  + psycopg2                                  2.9.10  py39hf307376_1         conda-forge      157kB
+  + postgresql                                  17.6  h8836559_1             conda-forge        4MB
+  + fontconfig                                2.15.0  h765892d_1             conda-forge      192kB
+  + mkl                                     2025.3.0  hac47afa_455           conda-forge      100MB
+  + xorg-libxau                               1.0.12  hba3369d_1             conda-forge      109kB
+  + xorg-libxdmcp                              1.1.5  hba3369d_1             conda-forge       71kB
+  + pthread-stubs                                0.4  h0e40799_1002          conda-forge        9kB
+  + fonttools                                 4.59.1  py39h5769e4c_0         conda-forge        2MB
+  + libblas                                   3.11.0  5_hf2e6a31_mkl         conda-forge       67kB
+  + libxcb                                    1.17.0  h0e4246c_0             conda-forge        1MB
+  + libcblas                                  3.11.0  5_h2a3cdd5_mkl         conda-forge       68kB
+  + liblapack                                 3.11.0  5_hf9ab0e9_mkl         conda-forge       80kB
+  + xorg-libx11                               1.8.12  hf48077a_0             conda-forge      951kB
+  + pillow                                    11.3.0  py39hbad85af_0         conda-forge       42MB
+  + liblapacke                                3.11.0  5_h3ae206f_mkl         conda-forge       84kB
+  + numpy                                      2.0.2  py39h60232e0_1         conda-forge        6MB
+  + xorg-libxext                               1.3.7  hba3369d_0             conda-forge      286kB
+  + xorg-libice                                1.1.2  h0e40799_0             conda-forge      236kB
+  + kaldi                                   5.5.1112  cpu_hb457972_9         conda-forge       25MB
+  + contourpy                                  1.3.0  py39h2b77a98_2         conda-forge      197kB
+  + soxr-python                          0.5.0.post1  py39ha51f57c_1         conda-forge       86kB
+  + scipy                                     1.13.1  py39h1a10956_0         conda-forge       15MB
+  + numba                                     0.60.0  py39h5dcb127_0         conda-forge        4MB
+  + biopython                                   1.85  py39ha55e580_1         conda-forge        3MB
+  + xorg-libsm                                 1.2.6  h0e40799_0             conda-forge       97kB
+  + matplotlib-base                            3.9.4  py39h5376392_0         conda-forge        7MB
+  + scikit-learn                               1.6.1  py39hdd013cc_0         conda-forge        8MB
+  + xorg-libxt                                 1.3.1  h0e40799_0             conda-forge      919kB
+  + hdbscan                                   0.8.39  py39h4b0a98a_0         conda-forge      493kB
+  + xorg-libxpm                               3.5.18  hba3369d_0             conda-forge      238kB
+  + libgd                                      2.3.3  h7208af6_11            conda-forge      166kB
+  + libglib                                   2.86.3  h9bccc14_0             pkgs/main          3MB
+  + pgvector                                   0.4.1  py39haa95532_0         pkgs/main         50kB
+  + urllib3                                    2.5.0  pyhd8ed1ab_0           conda-forge      102kB
+  + pysoundfile                               0.13.1  pyhd8ed1ab_0           conda-forge       31kB
+  + kneed                                      0.8.5  pyhd8ed1ab_1           conda-forge       16kB
+  + pgvector-python                            0.4.1  pyhc48fcf7_0           conda-forge       23kB
+  + requests                                  2.32.5  pyhd8ed1ab_0           conda-forge       59kB
+  + pooch                                      1.8.2  pyhd8ed1ab_3           conda-forge       56kB
+  + librosa                                   0.11.0  pyhd8ed1ab_0           conda-forge      199kB
+  + gts                                        0.7.6  h6b5321d_4             conda-forge      189kB
+  + gdk-pixbuf                               2.42.12  hab781ea_1             conda-forge      579kB
+  + cairo                                     1.18.4  h5782bbf_0             conda-forge        2MB
+  + harfbuzz                                  12.2.0  h5f2951f_0             conda-forge        1MB
+  + pango                                     1.56.4  h03d888a_0             conda-forge      455kB
+  + graphviz                                  14.1.2  h4c50273_0             conda-forge        1MB
+  + librsvg                                   2.58.4  h5ce5fed_3             conda-forge        4MB
+  + pynini                               2.1.6.post1  py39h0fafb3a_2         conda-forge      870kB
+  + ffmpeg                                     7.1.0  gpl_h2585aa8_705       conda-forge       10MB
+  + kalpy                                      0.7.2  py39h9da4e41_0         conda-forge        2MB
+  + montreal-forced-aligner                    3.3.4  pyhd8ed1ab_0           conda-forge       12MB
+
+  Upgrade:
+-----------------------------------------------------------------------------------------------------
+
+  - ca-certificates                        2025.12.2  haa95532_0             pkgs/main       Cached
+  + ca-certificates                         2026.1.4  h4c7d964_0             conda-forge     Cached
+  - openssl                                   3.0.19  hbb43b14_0             pkgs/main       Cached
+  + openssl                                    3.6.1  hf411b9b_1             conda-forge        9MB
+
+  Summary:
+
+  Install: 167 packages
+  Upgrade: 2 packages
+
+  Total download: 354MB
+
+-----------------------------------------------------------------------------------------------------
+
+
+Confirm changes: [Y/n] y
+decorator                                           14.1kB @  57.4kB/s  0.2s
+packaging                                           72.0kB @ 283.4kB/s  0.3s
+munkres                                             15.9kB @  46.3kB/s  0.1s
+typing_extensions                                   51.1kB @ 147.7kB/s  0.3s
+idna                                                49.8kB @ 132.8kB/s  0.1s
+joblib                                             224.4kB @ 590.2kB/s  0.4s
+platformdirs                                        23.5kB @  53.0kB/s  0.1s
+mdurl                                               14.5kB @  31.6kB/s  0.1s
+importlib-metadata                                  34.6kB @  59.6kB/s  0.1s
+font-ttf-dejavu-sans-mono                          397.4kB @ 531.1kB/s  0.4s
+h2                                                  53.9kB @  71.9kB/s  0.2s
+dataclassy                                          31.7kB @  40.5kB/s  0.8s
+importlib-resources                                  9.7kB @  10.0kB/s  0.2s
+font-ttf-ubuntu                                      1.6MB @   1.5MB/s  0.7s
+fonts-conda-ecosystem                                3.7kB @   3.5kB/s  0.3s
+python-dateutil                                    233.3kB @ 199.5kB/s  0.7s
+soxr                                               112.3kB @  83.2kB/s  0.3s
+openh264                                           410.1kB @ 303.6kB/s  0.4s
+lz4-c                                              139.9kB @ 100.0kB/s  0.2s
+lame                                               570.6kB @ 388.6kB/s  0.4s
+libbrotlicommon                                     82.0kB @  37.1kB/s  0.8s
+libjpeg-turbo                                      841.8kB @ 369.9kB/s  0.8s
+libiconv                                           696.9kB @ 303.9kB/s  0.9s
+fribidi                                             64.4kB @  27.1kB/s  0.1s
+lerc                                               164.7kB @  56.2kB/s  0.7s
+unicodedata2                                       400.3kB @ 135.7kB/s  0.6s
+qhull                                                1.4MB @ 461.5kB/s  1.6s
+msgpack-python                                      81.3kB @  26.3kB/s  0.1s
+pyyaml                                             157.4kB @  49.2kB/s  0.2s
+greenlet                                           200.1kB @  51.8kB/s  0.9s
+libflac                                            331.1kB @  85.7kB/s  0.7s
+libxml2                                              1.5MB @ 336.8kB/s  1.4s
+baumwelch                                            1.4MB @ 210.9kB/s  2.1s
+_openmp_mutex                                       49.5kB @   7.3kB/s  0.2s
+sqlalchemy                                           2.8MB @ 397.3kB/s  3.2s
+libtiff                                            978.9kB @ 138.9kB/s  3.2s
+openjpeg                                           245.1kB @  34.5kB/s  0.3s
+freetype                                           184.6kB @  25.3kB/s  0.2s
+xorg-libxau                                        109.2kB @  14.6kB/s  0.2s
+sox                                                724.3kB @  81.7kB/s  1.8s
+libcblas                                            68.1kB @   7.5kB/s  0.3s
+fonttools                                            2.0MB @ 195.5kB/s  2.5s
+xorg-libxext                                       286.1kB @  27.3kB/s  0.5s
+openssl                                              9.3MB @ 880.3kB/s  8.3s
+contourpy                                          196.8kB @  18.3kB/s  0.3s
+postgresql                                           4.4MB @ 370.0kB/s  4.7s
+hdbscan                                            492.7kB @  39.6kB/s  0.6s
+Download error (28) Timeout was reached [https://repo.anaconda.com/pkgs/main/win-64/libglib-2.86.3-h9bccc14_0.conda]
+Failed to resolve host 'repo.anaconda.com' with timeout after 12436 ms
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\conda\exception_handler.py", line 17, in __call__
+        return func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\mamba\mamba.py", line 945, in exception_converter
+        raise e
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\mamba\mamba.py", line 938, in exception_converter
+        exit_code = _wrapped_main(*args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\mamba\mamba.py", line 884, in _wrapped_main
+        result = do_call(parsed_args, p)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\mamba\mamba.py", line 756, in do_call
+        exit_code = install(args, parser, "install")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\mamba\mamba.py", line 557, in install
+        transaction.fetch_extract_packages()
+    RuntimeError: Download error (28) Timeout was reached [https://repo.anaconda.com/pkgs/main/win-64/libglib-2.86.3-h9bccc14_0.conda]
+    Failed to resolve host 'repo.anaconda.com' with timeout after 12436 ms
+
+`$ C:\Users\DELL\anaconda3\Scripts\mamba install -c conda-forge montreal-forced-aligner`
+
+  environment variables:
+                 CIO_TEST=<not set>
+        CONDA_DEFAULT_ENV=mfa
+                CONDA_EXE=C:\Users\DELL\anaconda3\condabin\..\Scripts\conda.exe
+               CONDA_EXES="C:\Users\DELL\anaconda3\condabin\..\Scripts\conda.exe"
+             CONDA_PREFIX=C:\Users\DELL\anaconda3\envs\mfa
+           CONDA_PREFIX_1=C:\Users\DELL\anaconda3
+    CONDA_PROMPT_MODIFIER=(mfa)
+         CONDA_PYTHON_EXE=C:\Users\DELL\anaconda3\python.exe
+               CONDA_ROOT=C:\Users\DELL\anaconda3
+              CONDA_SHLVL=2
+           CURL_CA_BUNDLE=<not set>
+                 HOMEPATH=\Users\DELL
+               LD_PRELOAD=<not set>
+                     PATH=C:\Users\DELL\anaconda3\envs\mfa;C:\Users\DELL\anaconda3\envs\mfa\Libr
+                          ary\mingw-
+                          w64\bin;C:\Users\DELL\anaconda3\envs\mfa\Library\usr\bin;C:\Users\DELL
+                          \anaconda3\envs\mfa\Library\bin;C:\Users\DELL\anaconda3\envs\mfa\Scrip
+                          ts;C:\Users\DELL\anaconda3\envs\mfa\bin;C:\Users\DELL\anaconda3\condab
+                          in;C:\Program Files\Common Files\Oracle\Java\javapath;C:\oraclexe\app\
+                          oracle\product\10.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Win
+                          dows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windo
+                          ws\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files
+                          (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA
+                          Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL
+                          Server\120\Tools\Binn;C:\Program
+                          Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program
+                          Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\DE
+                          LL\AppData\Local\pnpm;C:\Users\DELL\AppData\Local\Programs\Python\Pyth
+                          on313\Scripts;C:\Users\DELL\AppData\Local\Programs\Python\Python313;C:
+                          \Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\DELL\AppData\Local\M
+                          icrosoft\WindowsApps;C:\Users\DELL\AppData\Local\Programs\Microsoft VS
+                          Code\bin;C:\Users\DELL\.relay\bin;C:\Users\DELL\AppData\Roaming\npm
+             PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\Windows
+                          PowerShell\v1.0\Modules
+       REQUESTS_CA_BUNDLE=<not set>
+            SSL_CERT_FILE=C:\Users\DELL\anaconda3\Library\ssl\cacert.pem
+    VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+
+     active environment : mfa
+    active env location : C:\Users\DELL\anaconda3\envs\mfa
+            shell level : 2
+       user config file : C:\Users\DELL\.condarc
+ populated config files : C:\Users\DELL\.condarc
+          conda version : 23.7.4
+    conda-build version : 3.26.1
+         python version : 3.11.5.final.0
+       virtual packages : __archspec=1=x86_64
+                          __cuda=12.9=0
+                          __win=0=0
+       base environment : C:\Users\DELL\anaconda3  (writable)
+      conda av data dir : C:\Users\DELL\anaconda3\etc\conda
+  conda av metadata url : None
+           channel URLs : https://conda.anaconda.org/conda-forge/win-64
+                          https://conda.anaconda.org/conda-forge/noarch
+                          https://repo.anaconda.com/pkgs/main/win-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/win-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+                          https://repo.anaconda.com/pkgs/msys2/win-64
+                          https://repo.anaconda.com/pkgs/msys2/noarch
+          package cache : C:\Users\DELL\anaconda3\pkgs
+                          C:\Users\DELL\.conda\pkgs
+                          C:\Users\DELL\AppData\Local\conda\conda\pkgs
+       envs directories : C:\Users\DELL\anaconda3\envs
+                          C:\Users\DELL\.conda\envs
+                          C:\Users\DELL\AppData\Local\conda\conda\envs
+               platform : win-64
+             user-agent : conda/23.7.4 requests/2.31.0 CPython/3.11.5 Windows/10 Windows/10.0.22631
+          administrator : False
+             netrc file : None
+           offline mode : False
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+If you suspect this error is being caused by a malfunctioning plugin,
+consider using the --no-plugins option to turn off plugins.
+
+Example: conda --no-plugins install <package>
+
+Alternatively, you can set the CONDA_NO_PLUGINS environment variable on
+the command line to run the command without plugins enabled.
+
+Example: CONDA_NO_PLUGINS=true conda install <package>
+
+
+(mfa) C:\Users\DELL>mamba install -c conda-forge montreal-forced-aligner
+Error while loading conda entry point: anaconda-cloud-auth (cannot import name 'ChannelAuthBase' from 'conda.plugins.types' (C:\Users\DELL\anaconda3\Lib\site-packages\conda\plugins\types.py))
+Error while loading conda entry point: anaconda-cloud-auth (cannot import name 'ChannelAuthBase' from 'conda.plugins.types' (C:\Users\DELL\anaconda3\Lib\site-packages\conda\plugins\types.py))
+
+Looking for: ['montreal-forced-aligner']
+
+conda-forge/win-64                                          Using cache
+conda-forge/noarch                                          Using cache
+pkgs/r/win-64                                                 No change
+pkgs/msys2/win-64                                             No change
+pkgs/main/win-64                                              No change
+pkgs/r/noarch                                                 No change
+pkgs/main/noarch                                              No change
+pkgs/msys2/noarch                                             No change
+
+Pinned packages:
+  - python 3.9.*
+
+
+warning  libmamba Package tarball 'C:\Users\DELL\anaconda3\pkgs\icu-75.1-he0c23c2_0.conda' is invalid
+warning  libmamba Package tarball 'C:\Users\DELL\anaconda3\pkgs\pillow-11.3.0-py39hbad85af_0.conda' is invalid
+warning  libmamba Package tarball 'C:\Users\DELL\anaconda3\pkgs\numba-0.60.0-py39h5dcb127_0.conda' is invalid
+warning  libmamba Package tarball 'C:\Users\DELL\anaconda3\pkgs\matplotlib-base-3.9.4-py39h5376392_0.conda' is invalid
+Transaction
+
+  Prefix: C:\Users\DELL\anaconda3\envs\mfa
+
+  Updating specs:
+
+   - montreal-forced-aligner
+   - ca-certificates
+   - openssl
+
+
+  Package                                    Version  Build                  Channel           Size
+-----------------------------------------------------------------------------------------------------
+  Install:
+-----------------------------------------------------------------------------------------------------
+
+  + dataclassy                                 1.0.1  pyhd8ed1ab_0           conda-forge     Cached
+  + decorator                                  5.2.1  pyhd8ed1ab_0           conda-forge     Cached
+  + joblib                                     1.5.1  pyhd8ed1ab_0           conda-forge     Cached
+  + packaging                                   26.0  pyhcf101f3_0           conda-forge     Cached
+  + typing_extensions                         4.14.1  pyhe01879c_0           conda-forge     Cached
+  + zipp                                      3.23.0  pyhd8ed1ab_0           conda-forge       23kB
+  + threadpoolctl                              3.6.0  pyhecae5ae_0           conda-forge       24kB
+  + certifi                                 2025.8.3  pyhd8ed1ab_0           conda-forge      159kB
+  + cycler                                    0.12.1  pyhd8ed1ab_1           conda-forge       13kB
+  + pyparsing                                  3.2.3  pyhe01879c_2           conda-forge      102kB
+  + munkres                                    1.1.4  pyhd8ed1ab_1           conda-forge     Cached
+  + colorama                                   0.4.6  pyhd8ed1ab_1           conda-forge       27kB
+  + pygments                                  2.19.2  pyhd8ed1ab_0           conda-forge      889kB
+  + idna                                        3.10  pyhd8ed1ab_1           conda-forge     Cached
+  + charset-normalizer                         3.4.3  pyhd8ed1ab_0           conda-forge       51kB
+  + six                                       1.17.0  pyhe01879c_1           conda-forge       18kB
+  + platformdirs                               4.3.8  pyhe01879c_0           conda-forge     Cached
+  + mdurl                                      0.1.2  pyhd8ed1ab_1           conda-forge     Cached
+  + pycparser                                   2.22  pyh29332c3_1           conda-forge      110kB
+  + win_inet_pton                              1.1.0  pyh7428d3b_8           conda-forge       10kB
+  + hpack                                      4.1.0  pyhd8ed1ab_0           conda-forge       31kB
+  + hyperframe                                 6.1.0  pyhd8ed1ab_0           conda-forge       17kB
+  + font-ttf-dejavu-sans-mono                   2.37  hab24e00_0             conda-forge     Cached
+  + font-ttf-inconsolata                       3.000  h77eed37_0             conda-forge       97kB
+  + font-ttf-source-code-pro                   2.038  h77eed37_0             conda-forge      701kB
+  + font-ttf-ubuntu                             0.83  h77eed37_3             conda-forge     Cached
+  + typing-extensions                         4.14.1  h4440ef1_0             conda-forge       90kB
+  + importlib_resources                        6.5.2  pyhd8ed1ab_0           conda-forge       34kB
+  + importlib-metadata                         8.7.0  pyhe01879c_1           conda-forge     Cached
+  + click                                      8.1.8  pyh7428d3b_0           conda-forge       85kB
+  + tqdm                                      4.67.1  pyhd8ed1ab_1           conda-forge       89kB
+  + python-dateutil                      2.9.0.post0  pyhe01879c_2           conda-forge     Cached
+  + markdown-it-py                             3.0.0  pyhd8ed1ab_1           conda-forge       64kB
+  + pysocks                                    1.7.1  pyh09c184e_7           conda-forge       22kB
+  + h2                                         4.2.0  pyhd8ed1ab_0           conda-forge     Cached
+  + fonts-conda-forge                              1  hc364b38_1             conda-forge        4kB
+  + praatio                                    6.2.0  pyhd8ed1ab_1           conda-forge       62kB
+  + importlib-resources                        6.5.2  pyhd8ed1ab_0           conda-forge     Cached
+  + lazy-loader                                  0.4  pyhd8ed1ab_2           conda-forge       16kB
+  + rich                                      14.1.0  pyhe01879c_0           conda-forge      201kB
+  + fonts-conda-ecosystem                          1  0                      conda-forge     Cached
+  + lazy_loader                                  0.4  pyhd8ed1ab_2           conda-forge        7kB
+  + rich-click                                 1.8.9  pyhd8ed1ab_0           conda-forge       35kB
+  + icu                                         75.1  he0c23c2_0             conda-forge       15MB
+  + x265                                         3.5  h2d74725_3             conda-forge        6MB
+  + aom                                        3.9.1  he0c23c2_0             conda-forge        2MB
+  + openh264                                   2.5.0  ha9db3cd_0             conda-forge     Cached
+  + svt-av1                                    2.3.0  he0c23c2_0             conda-forge        2MB
+  + python_abi                                   3.9  2_cp39                 conda-forge        5kB
+  + soxr                                       0.1.3  hcfcfb64_3             conda-forge     Cached
+  + lame                                       3.100  hcfcfb64_1003          conda-forge     Cached
+  + libmad                                   0.15.1b  hcfcfb64_1001          conda-forge       93kB
+  + libopus                                    1.6.1  h6a83c73_0             conda-forge      307kB
+  + libpng                                    1.6.54  h7351971_0             conda-forge      383kB
+  + yaml                                       0.2.5  h6a83c73_3             conda-forge       64kB
+  + lz4-c                                     1.10.0  h2466b09_1             conda-forge     Cached
+  + zstd                                       1.5.7  h534d264_6             conda-forge      388kB
+  + dlfcn-win32                                1.4.2  hac47afa_0             conda-forge       19kB
+  + qhull                                     2020.2  hc790b64_5             conda-forge     Cached
+  + libiconv                                    1.18  hc1393d2_2             conda-forge     Cached
+  + libwinpthread              12.0.0.r4.gg4f2fc60ca  h57928b3_10            conda-forge       37kB
+  + libogg                                     1.3.5  h2466b09_1             conda-forge       35kB
+  + mpg123                                    1.32.9  h01009b0_0             conda-forge      274kB
+  + llvm-openmp                               21.1.8  h4fa8253_0             conda-forge      348kB
+  + libbrotlicommon                            1.2.0  hfd05255_1             conda-forge     Cached
+  + x264                                  1!164.3095  h8ffe710_2             conda-forge        1MB
+  + dav1d                                      1.2.1  hcfcfb64_0             conda-forge      619kB
+  + libjpeg-turbo                              3.1.2  hfd05255_0             conda-forge     Cached
+  + libdeflate                                  1.22  h2466b09_0             conda-forge      156kB
+  + libwebp-base                               1.6.0  h4d5522a_0             conda-forge      279kB
+  + lerc                                       4.0.0  h6470a55_1             conda-forge     Cached
+  + graphite2                                 1.3.14  hac47afa_2             conda-forge       96kB
+  + pixman                                    0.46.4  h5112557_1             conda-forge      543kB
+  + fribidi                                   1.0.16  hfd05255_0             conda-forge     Cached
+  + getopt-win32                                 0.1  h6a83c73_3             conda-forge       26kB
+  + pcre2                                      10.46  h3402e2f_0             conda-forge        1MB
+  + brotli-python                              1.0.9  py39h99910a6_8         conda-forge      343kB
+  + cffi                                      1.17.1  py39ha55e580_0         conda-forge      237kB
+  + unicodedata2                              16.0.0  py39ha55e580_0         conda-forge     Cached
+  + kiwisolver                                 1.4.7  py39h2b77a98_0         conda-forge       56kB
+  + llvmlite                                  0.43.0  py39he94c479_1         conda-forge       17MB
+  + greenlet                                   3.2.4  py39hdb6649d_0         conda-forge     Cached
+  + standard-sunau                            3.13.0  py39hcbf5309_2         conda-forge       19kB
+  + standard-aifc                             3.13.0  py39hcbf5309_2         conda-forge       25kB
+  + msgpack-python                             1.1.1  py39h2b77a98_0         conda-forge     Cached
+  + audioread                                  3.0.1  py39hcbf5309_2         conda-forge       37kB
+  + libfreetype6                              2.14.1  hdbac1cb_0             conda-forge      340kB
+  + pyyaml                                     6.0.2  py39hf73967f_2         conda-forge     Cached
+  + openfst                                    1.8.3  hc790b64_3             conda-forge        3MB
+  + libintl                                   0.22.5  h5728263_3             conda-forge       96kB
+  + libxml2                                   2.13.9  h741aa76_0             conda-forge     Cached
+  + libgomp                                   15.2.0  h8ee18e1_17            conda-forge      664kB
+  + libvorbis                                  1.3.7  h5112557_2             conda-forge      243kB
+  + libflac                                    1.4.3  h63175ca_0             conda-forge     Cached
+  + libbrotlienc                               1.2.0  hfd05255_1             conda-forge      253kB
+  + libbrotlidec                               1.2.0  hfd05255_1             conda-forge       34kB
+  + libtiff                                    4.7.0  hfc51747_1             conda-forge     Cached
+  + krb5                                      1.21.3  hdf4eb48_0             conda-forge      712kB
+  + zstandard                                 0.23.0  py39h0802e32_3         conda-forge      333kB
+  + sqlalchemy                                2.0.43  py39h0802e32_0         conda-forge     Cached
+  + libfreetype                               2.14.1  h57928b3_0             conda-forge        8kB
+  + ngram                                     1.3.16  hc790b64_1             conda-forge        4MB
+  + baumwelch                                  0.3.9  hd620369_3             conda-forge     Cached
+  + libhwloc                                  2.12.1  default_h88281d1_1000  conda-forge        2MB
+  + libxslt                                   1.1.43  h25c3957_0             conda-forge      417kB
+  + _openmp_mutex                                4.5  2_gnu                  conda-forge     Cached
+  + libsndfile                                 1.2.2  h81429f1_1             conda-forge      337kB
+  + brotli-bin                                 1.2.0  hfd05255_1             conda-forge       23kB
+  + openjpeg                                   2.5.3  h24db6dd_1             conda-forge     Cached
+  + lcms2                                       2.17  hbcf6048_0             conda-forge      511kB
+  + libpq                                       17.6  h063c6db_1             conda-forge        4MB
+  + freetype                                  2.14.1  h57928b3_0             conda-forge     Cached
+  + tbb                                     2022.3.0  hd094cb3_1             conda-forge      156kB
+  + libgcc                                    15.2.0  h8ee18e1_17            conda-forge      822kB
+  + sox                                       14.4.2  h39259cc_1019          conda-forge     Cached
+  + brotli                                     1.2.0  h2d644bc_1             conda-forge       20kB
+  + psycopg2                                  2.9.10  py39hf307376_1         conda-forge      157kB
+  + postgresql                                  17.6  h8836559_1             conda-forge     Cached
+  + fontconfig                                2.15.0  h765892d_1             conda-forge      192kB
+  + mkl                                     2025.3.0  hac47afa_455           conda-forge      100MB
+  + xorg-libxau                               1.0.12  hba3369d_1             conda-forge     Cached
+  + xorg-libxdmcp                              1.1.5  hba3369d_1             conda-forge       71kB
+  + pthread-stubs                                0.4  h0e40799_1002          conda-forge        9kB
+  + fonttools                                 4.59.1  py39h5769e4c_0         conda-forge     Cached
+  + libblas                                   3.11.0  5_hf2e6a31_mkl         conda-forge       67kB
+  + libxcb                                    1.17.0  h0e4246c_0             conda-forge        1MB
+  + libcblas                                  3.11.0  5_h2a3cdd5_mkl         conda-forge     Cached
+  + liblapack                                 3.11.0  5_hf9ab0e9_mkl         conda-forge       80kB
+  + xorg-libx11                               1.8.12  hf48077a_0             conda-forge      951kB
+  + pillow                                    11.3.0  py39hbad85af_0         conda-forge       42MB
+  + liblapacke                                3.11.0  5_h3ae206f_mkl         conda-forge       84kB
+  + numpy                                      2.0.2  py39h60232e0_1         conda-forge        6MB
+  + xorg-libxext                               1.3.7  hba3369d_0             conda-forge     Cached
+  + xorg-libice                                1.1.2  h0e40799_0             conda-forge      236kB
+  + kaldi                                   5.5.1112  cpu_hb457972_9         conda-forge       25MB
+  + contourpy                                  1.3.0  py39h2b77a98_2         conda-forge     Cached
+  + soxr-python                          0.5.0.post1  py39ha51f57c_1         conda-forge       86kB
+  + scipy                                     1.13.1  py39h1a10956_0         conda-forge       15MB
+  + numba                                     0.60.0  py39h5dcb127_0         conda-forge        4MB
+  + biopython                                   1.85  py39ha55e580_1         conda-forge        3MB
+  + xorg-libsm                                 1.2.6  h0e40799_0             conda-forge       97kB
+  + matplotlib-base                            3.9.4  py39h5376392_0         conda-forge        7MB
+  + scikit-learn                               1.6.1  py39hdd013cc_0         conda-forge        8MB
+  + xorg-libxt                                 1.3.1  h0e40799_0             conda-forge      919kB
+  + hdbscan                                   0.8.39  py39h4b0a98a_0         conda-forge     Cached
+  + xorg-libxpm                               3.5.18  hba3369d_0             conda-forge      238kB
+  + libgd                                      2.3.3  h7208af6_11            conda-forge      166kB
+  + libglib                                   2.86.3  h9bccc14_0             pkgs/main          3MB
+  + pgvector                                   0.4.1  py39haa95532_0         pkgs/main         50kB
+  + urllib3                                    2.5.0  pyhd8ed1ab_0           conda-forge      102kB
+  + pysoundfile                               0.13.1  pyhd8ed1ab_0           conda-forge       31kB
+  + kneed                                      0.8.5  pyhd8ed1ab_1           conda-forge       16kB
+  + pgvector-python                            0.4.1  pyhc48fcf7_0           conda-forge       23kB
+  + requests                                  2.32.5  pyhd8ed1ab_0           conda-forge       59kB
+  + pooch                                      1.8.2  pyhd8ed1ab_3           conda-forge       56kB
+  + librosa                                   0.11.0  pyhd8ed1ab_0           conda-forge      199kB
+  + gts                                        0.7.6  h6b5321d_4             conda-forge      189kB
+  + gdk-pixbuf                               2.42.12  hab781ea_1             conda-forge      579kB
+  + cairo                                     1.18.4  h5782bbf_0             conda-forge        2MB
+  + harfbuzz                                  12.2.0  h5f2951f_0             conda-forge        1MB
+  + pango                                     1.56.4  h03d888a_0             conda-forge      455kB
+  + graphviz                                  14.1.2  h4c50273_0             conda-forge        1MB
+  + librsvg                                   2.58.4  h5ce5fed_3             conda-forge        4MB
+  + pynini                               2.1.6.post1  py39h0fafb3a_2         conda-forge      870kB
+  + ffmpeg                                     7.1.0  gpl_h2585aa8_705       conda-forge       10MB
+  + kalpy                                      0.7.2  py39h9da4e41_0         conda-forge        2MB
+  + montreal-forced-aligner                    3.3.4  pyhd8ed1ab_0           conda-forge       12MB
+
+  Upgrade:
+-----------------------------------------------------------------------------------------------------
+
+  - ca-certificates                        2025.12.2  haa95532_0             pkgs/main       Cached
+  + ca-certificates                         2026.1.4  h4c7d964_0             conda-forge     Cached
+  - openssl                                   3.0.19  hbb43b14_0             pkgs/main       Cached
+  + openssl                                    3.6.1  hf411b9b_1             conda-forge     Cached
+
+  Summary:
+
+  Install: 167 packages
+  Upgrade: 2 packages
+
+  Total download: 321MB
+
+-----------------------------------------------------------------------------------------------------
+
+
+Confirm changes: [Y/n] y
+cycler                                              13.4kB @  48.5kB/s  0.3s
+zipp                                                23.0kB @  77.7kB/s  0.3s
+threadpoolctl                                       23.9kB @  80.9kB/s  0.3s
+certifi                                            158.7kB @ 505.4kB/s  0.3s
+win_inet_pton                                        9.6kB @  24.9kB/s  0.1s
+font-ttf-inconsolata                                96.5kB @ 251.0kB/s  0.1s
+markdown-it-py                                      64.4kB @ 163.9kB/s  0.1s
+lazy-loader                                         16.3kB @  33.2kB/s  0.1s
+font-ttf-source-code-pro                           700.8kB @   1.2MB/s  0.3s
+pyparsing                                          102.3kB @ 173.7kB/s  0.6s
+python_abi                                           4.5kB @   6.5kB/s  0.2s
+dlfcn-win32                                         19.2kB @  27.0kB/s  0.1s
+praatio                                             61.7kB @  60.0kB/s  0.6s
+libpng                                             383.1kB @ 351.8kB/s  0.5s
+graphite2                                           96.3kB @  81.4kB/s  0.2s
+kiwisolver                                          55.6kB @  37.4kB/s  0.3s
+mpg123                                             274.4kB @ 178.8kB/s  0.8s
+dav1d                                              618.6kB @ 376.0kB/s  0.9s
+standard-aifc                                       24.6kB @  13.0kB/s  0.4s
+pcre2                                                1.0MB @ 516.6kB/s  0.9s
+libvorbis                                          243.4kB @ 120.2kB/s  0.4s
+libsndfile                                         337.4kB @ 124.4kB/s  0.7s
+krb5                                               712.0kB @ 244.1kB/s  1.0s
+brotli                                              20.3kB @   6.1kB/s  0.4s
+x265                                                 5.5MB @   1.2MB/s  4.4s
+libblas                                             67.4kB @  13.7kB/s  0.2s
+xorg-libx11                                        951.4kB @ 156.4kB/s  1.2s
+openfst                                              2.8MB @ 418.4kB/s  5.1s
+ngram                                                4.4MB @ 660.5kB/s  4.6s
+libpq                                                3.9MB @ 579.4kB/s  4.0s
+soxr-python                                         85.9kB @  12.5kB/s  0.2s
+libgd                                              165.8kB @  22.9kB/s  0.4s
+urllib3                                            101.7kB @  13.4kB/s  0.4s
+pgvector-python                                     23.4kB @   3.0kB/s  0.2s
+librosa                                            199.4kB @  23.6kB/s  0.7s
+cairo                                                1.5MB @ 139.1kB/s  2.5s
+numpy                                                6.3MB @ 574.6kB/s  4.9s
+graphviz                                             1.2MB @  95.2kB/s  1.9s
+colorama                                            27.0kB @   2.1kB/s  0.2s
+biopython                                            2.8MB @ 217.7kB/s  6.4s
+six                                                 18.5kB @   1.4kB/s  0.1s
+hyperframe                                          17.4kB @   1.3kB/s  0.2s
+fonts-conda-forge                                    4.1kB @ 305.0 B/s  0.1s
+click                                               85.2kB @   6.3kB/s  0.4s
+rich-click                                          34.9kB @   2.6kB/s  0.3s
+yaml                                                63.9kB @   4.6kB/s  0.3s
+libogg                                              35.0kB @   2.5kB/s  0.2s
+libdeflate                                         155.5kB @  10.7kB/s  0.5s
+scikit-learn                                         8.3MB @ 564.2kB/s  7.9s
+getopt-win32                                        26.2kB @   1.8kB/s  0.2s
+libfreetype6                                       340.3kB @  22.1kB/s  0.7s
+libbrotlienc                                       252.9kB @  15.7kB/s  0.7s
+libfreetype                                          8.1kB @ 499.0 B/s  0.1s
+brotli-bin                                          22.7kB @   1.4kB/s  0.2s
+svt-av1                                              1.8MB @ 111.8kB/s  3.0s
+xorg-libxdmcp                                       70.7kB @   4.2kB/s  0.3s
+liblapack                                           80.2kB @   4.7kB/s  0.4s
+xorg-libice                                        236.3kB @  13.4kB/s  0.5s
+libgcc                                             821.9kB @  46.0kB/s  1.5s
+xorg-libxt                                         918.7kB @  47.2kB/s  1.6s
+Download error (28) Timeout was reached [https://repo.anaconda.com/pkgs/main/win-64/pgvector-0.4.1-py39haa95532_0.conda]
+Failed to resolve host 'repo.anaconda.com' with timeout after 19451 ms
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\conda\exception_handler.py", line 17, in __call__
+        return func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\mamba\mamba.py", line 945, in exception_converter
+        raise e
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\mamba\mamba.py", line 938, in exception_converter
+        exit_code = _wrapped_main(*args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\mamba\mamba.py", line 884, in _wrapped_main
+        result = do_call(parsed_args, p)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\mamba\mamba.py", line 756, in do_call
+        exit_code = install(args, parser, "install")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\DELL\anaconda3\Lib\site-packages\mamba\mamba.py", line 557, in install
+        transaction.fetch_extract_packages()
+    RuntimeError: Download error (28) Timeout was reached [https://repo.anaconda.com/pkgs/main/win-64/pgvector-0.4.1-py39haa95532_0.conda]
+    Failed to resolve host 'repo.anaconda.com' with timeout after 19451 ms
+
+`$ C:\Users\DELL\anaconda3\Scripts\mamba install -c conda-forge montreal-forced-aligner`
+
+  environment variables:
+                 CIO_TEST=<not set>
+        CONDA_DEFAULT_ENV=mfa
+                CONDA_EXE=C:\Users\DELL\anaconda3\condabin\..\Scripts\conda.exe
+               CONDA_EXES="C:\Users\DELL\anaconda3\condabin\..\Scripts\conda.exe"
+             CONDA_PREFIX=C:\Users\DELL\anaconda3\envs\mfa
+           CONDA_PREFIX_1=C:\Users\DELL\anaconda3
+    CONDA_PROMPT_MODIFIER=(mfa)
+         CONDA_PYTHON_EXE=C:\Users\DELL\anaconda3\python.exe
+               CONDA_ROOT=C:\Users\DELL\anaconda3
+              CONDA_SHLVL=2
+           CURL_CA_BUNDLE=<not set>
+                 HOMEPATH=\Users\DELL
+               LD_PRELOAD=<not set>
+                     PATH=C:\Users\DELL\anaconda3\envs\mfa;C:\Users\DELL\anaconda3\envs\mfa\Libr
+                          ary\mingw-
+                          w64\bin;C:\Users\DELL\anaconda3\envs\mfa\Library\usr\bin;C:\Users\DELL
+                          \anaconda3\envs\mfa\Library\bin;C:\Users\DELL\anaconda3\envs\mfa\Scrip
+                          ts;C:\Users\DELL\anaconda3\envs\mfa\bin;C:\Users\DELL\anaconda3\condab
+                          in;C:\Program Files\Common Files\Oracle\Java\javapath;C:\oraclexe\app\
+                          oracle\product\10.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Win
+                          dows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windo
+                          ws\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files
+                          (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA
+                          Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL
+                          Server\120\Tools\Binn;C:\Program
+                          Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program
+                          Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\DE
+                          LL\AppData\Local\pnpm;C:\Users\DELL\AppData\Local\Programs\Python\Pyth
+                          on313\Scripts;C:\Users\DELL\AppData\Local\Programs\Python\Python313;C:
+                          \Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\DELL\AppData\Local\M
+                          icrosoft\WindowsApps;C:\Users\DELL\AppData\Local\Programs\Microsoft VS
+                          Code\bin;C:\Users\DELL\.relay\bin;C:\Users\DELL\AppData\Roaming\npm
+             PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\Windows
+                          PowerShell\v1.0\Modules
+       REQUESTS_CA_BUNDLE=<not set>
+            SSL_CERT_FILE=C:\Users\DELL\anaconda3\Library\ssl\cacert.pem
+    VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+
+     active environment : mfa
+    active env location : C:\Users\DELL\anaconda3\envs\mfa
+            shell level : 2
+       user config file : C:\Users\DELL\.condarc
+ populated config files : C:\Users\DELL\.condarc
+          conda version : 23.7.4
+    conda-build version : 3.26.1
+         python version : 3.11.5.final.0
+       virtual packages : __archspec=1=x86_64
+                          __cuda=12.9=0
+                          __win=0=0
+       base environment : C:\Users\DELL\anaconda3  (writable)
+      conda av data dir : C:\Users\DELL\anaconda3\etc\conda
+  conda av metadata url : None
+           channel URLs : https://conda.anaconda.org/conda-forge/win-64
+                          https://conda.anaconda.org/conda-forge/noarch
+                          https://repo.anaconda.com/pkgs/main/win-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/win-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+                          https://repo.anaconda.com/pkgs/msys2/win-64
+                          https://repo.anaconda.com/pkgs/msys2/noarch
+          package cache : C:\Users\DELL\anaconda3\pkgs
+                          C:\Users\DELL\.conda\pkgs
+                          C:\Users\DELL\AppData\Local\conda\conda\pkgs
+       envs directories : C:\Users\DELL\anaconda3\envs
+                          C:\Users\DELL\.conda\envs
+                          C:\Users\DELL\AppData\Local\conda\conda\envs
+               platform : win-64
+             user-agent : conda/23.7.4 requests/2.31.0 CPython/3.11.5 Windows/10 Windows/10.0.22631
+          administrator : False
+             netrc file : None
+           offline mode : False
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+If you suspect this error is being caused by a malfunctioning plugin,
+consider using the --no-plugins option to turn off plugins.
+
+Example: conda --no-plugins install <package>
+
+Alternatively, you can set the CONDA_NO_PLUGINS environment variable on
+the command line to run the command without plugins enabled.
+
+Example: CONDA_NO_PLUGINS=true conda install <package>
+
+
+(mfa) C:\Users\DELL>mamba install -c conda-forge --override-channels montreal-forced-aligner
+Error while loading conda entry point: anaconda-cloud-auth (cannot import name 'ChannelAuthBase' from 'conda.plugins.types' (C:\Users\DELL\anaconda3\Lib\site-packages\conda\plugins\types.py))
+Error while loading conda entry point: anaconda-cloud-auth (cannot import name 'ChannelAuthBase' from 'conda.plugins.types' (C:\Users\DELL\anaconda3\Lib\site-packages\conda\plugins\types.py))
+
+Looking for: ['montreal-forced-aligner']
+
+conda-forge/win-64                                          Using cache
+conda-forge/noarch                                          Using cache
+
+Pinned packages:
+  - python 3.9.*
+
+
+warning  libmamba Package tarball 'C:\Users\DELL\anaconda3\pkgs\icu-75.1-he0c23c2_0.conda' is invalid
+warning  libmamba Package tarball 'C:\Users\DELL\anaconda3\pkgs\llvmlite-0.43.0-py39he94c479_1.conda' is invalid
+warning  libmamba Package tarball 'C:\Users\DELL\anaconda3\pkgs\mkl-2025.3.0-hac47afa_455.conda' is invalid
+warning  libmamba Package tarball 'C:\Users\DELL\anaconda3\pkgs\pillow-11.3.0-py39hbad85af_0.conda' is invalid
+warning  libmamba Package tarball 'C:\Users\DELL\anaconda3\pkgs\numba-0.60.0-py39h5dcb127_0.conda' is invalid
+warning  libmamba Package tarball 'C:\Users\DELL\anaconda3\pkgs\ffmpeg-7.1.0-gpl_h2585aa8_705.conda' is invalid
+warning  libmamba Package tarball 'C:\Users\DELL\anaconda3\pkgs\matplotlib-base-3.9.4-py39h5376392_0.conda' is invalid
+Transaction
+
+  Prefix: C:\Users\DELL\anaconda3\envs\mfa
+
+  Updating specs:
+
+   - montreal-forced-aligner
+   - ca-certificates
+   - openssl
+
+
+  Package                                    Version  Build                  Channel           Size
+-----------------------------------------------------------------------------------------------------
+  Install:
+-----------------------------------------------------------------------------------------------------
+
+  + dataclassy                                 1.0.1  pyhd8ed1ab_0           conda-forge     Cached
+  + decorator                                  5.2.1  pyhd8ed1ab_0           conda-forge     Cached
+  + joblib                                     1.5.1  pyhd8ed1ab_0           conda-forge     Cached
+  + packaging                                   26.0  pyhcf101f3_0           conda-forge     Cached
+  + typing_extensions                         4.14.1  pyhe01879c_0           conda-forge     Cached
+  + zipp                                      3.23.0  pyhd8ed1ab_0           conda-forge     Cached
+  + font-ttf-dejavu-sans-mono                   2.37  hab24e00_0             conda-forge     Cached
+  + threadpoolctl                              3.6.0  pyhecae5ae_0           conda-forge     Cached
+  + certifi                                 2025.8.3  pyhd8ed1ab_0           conda-forge     Cached
+  + cycler                                    0.12.1  pyhd8ed1ab_1           conda-forge     Cached
+  + pyparsing                                  3.2.3  pyhe01879c_2           conda-forge     Cached
+  + munkres                                    1.1.4  pyhd8ed1ab_1           conda-forge     Cached
+  + colorama                                   0.4.6  pyhd8ed1ab_1           conda-forge     Cached
+  + pygments                                  2.19.2  pyhd8ed1ab_0           conda-forge      889kB
+  + idna                                        3.10  pyhd8ed1ab_1           conda-forge     Cached
+  + charset-normalizer                         3.4.3  pyhd8ed1ab_0           conda-forge       51kB
+  + six                                       1.17.0  pyhe01879c_1           conda-forge     Cached
+  + platformdirs                               4.3.8  pyhe01879c_0           conda-forge     Cached
+  + mdurl                                      0.1.2  pyhd8ed1ab_1           conda-forge     Cached
+  + font-ttf-inconsolata                       3.000  h77eed37_0             conda-forge     Cached
+  + font-ttf-source-code-pro                   2.038  h77eed37_0             conda-forge     Cached
+  + font-ttf-ubuntu                             0.83  h77eed37_3             conda-forge     Cached
+  + pycparser                                   2.22  pyh29332c3_1           conda-forge      110kB
+  + hpack                                      4.1.0  pyhd8ed1ab_0           conda-forge       31kB
+  + hyperframe                                 6.1.0  pyhd8ed1ab_0           conda-forge     Cached
+  + win_inet_pton                              1.1.0  pyh7428d3b_8           conda-forge     Cached
+  + typing-extensions                         4.14.1  h4440ef1_0             conda-forge       90kB
+  + importlib_resources                        6.5.2  pyhd8ed1ab_0           conda-forge       34kB
+  + importlib-metadata                         8.7.0  pyhe01879c_1           conda-forge     Cached
+  + click                                      8.1.8  pyh7428d3b_0           conda-forge     Cached
+  + tqdm                                      4.67.1  pyhd8ed1ab_1           conda-forge       89kB
+  + python-dateutil                      2.9.0.post0  pyhe01879c_2           conda-forge     Cached
+  + markdown-it-py                             3.0.0  pyhd8ed1ab_1           conda-forge     Cached
+  + fonts-conda-forge                              1  hc364b38_1             conda-forge     Cached
+  + h2                                         4.2.0  pyhd8ed1ab_0           conda-forge     Cached
+  + pysocks                                    1.7.1  pyh09c184e_7           conda-forge       22kB
+  + praatio                                    6.2.0  pyhd8ed1ab_1           conda-forge     Cached
+  + importlib-resources                        6.5.2  pyhd8ed1ab_0           conda-forge     Cached
+  + lazy-loader                                  0.4  pyhd8ed1ab_2           conda-forge     Cached
+  + rich                                      14.1.0  pyhe01879c_0           conda-forge      201kB
+  + fonts-conda-ecosystem                          1  0                      conda-forge     Cached
+  + lazy_loader                                  0.4  pyhd8ed1ab_2           conda-forge        7kB
+  + rich-click                                 1.8.9  pyhd8ed1ab_0           conda-forge     Cached
+  + icu                                         75.1  he0c23c2_0             conda-forge       15MB
+  + x265                                         3.5  h2d74725_3             conda-forge     Cached
+  + aom                                        3.9.1  he0c23c2_0             conda-forge        2MB
+  + dav1d                                      1.2.1  hcfcfb64_0             conda-forge     Cached
+  + openh264                                   2.5.0  ha9db3cd_0             conda-forge     Cached
+  + svt-av1                                    2.3.0  he0c23c2_0             conda-forge     Cached
+  + python_abi                                   3.9  2_cp39                 conda-forge     Cached
+  + soxr                                       0.1.3  hcfcfb64_3             conda-forge     Cached
+  + lame                                       3.100  hcfcfb64_1003          conda-forge     Cached
+  + libmad                                   0.15.1b  hcfcfb64_1001          conda-forge       93kB
+  + libopus                                    1.6.1  h6a83c73_0             conda-forge      307kB
+  + libpng                                    1.6.54  h7351971_0             conda-forge     Cached
+  + yaml                                       0.2.5  h6a83c73_3             conda-forge     Cached
+  + dlfcn-win32                                1.4.2  hac47afa_0             conda-forge     Cached
+  + qhull                                     2020.2  hc790b64_5             conda-forge     Cached
+  + libiconv                                    1.18  hc1393d2_2             conda-forge     Cached
+  + libwinpthread              12.0.0.r4.gg4f2fc60ca  h57928b3_10            conda-forge       37kB
+  + libogg                                     1.3.5  h2466b09_1             conda-forge     Cached
+  + mpg123                                    1.32.9  h01009b0_0             conda-forge     Cached
+  + llvm-openmp                               21.1.8  h4fa8253_0             conda-forge      348kB
+  + libjpeg-turbo                              3.1.2  hfd05255_0             conda-forge     Cached
+  + libdeflate                                  1.22  h2466b09_0             conda-forge     Cached
+  + libbrotlicommon                            1.2.0  hfd05255_1             conda-forge     Cached
+  + x264                                  1!164.3095  h8ffe710_2             conda-forge        1MB
+  + pixman                                    0.46.4  h5112557_1             conda-forge      543kB
+  + libwebp-base                               1.6.0  h4d5522a_0             conda-forge      279kB
+  + lerc                                       4.0.0  h6470a55_1             conda-forge     Cached
+  + zstd                                       1.5.7  h534d264_6             conda-forge      388kB
+  + graphite2                                 1.3.14  hac47afa_2             conda-forge     Cached
+  + fribidi                                   1.0.16  hfd05255_0             conda-forge     Cached
+  + pcre2                                      10.44  h99c9b8b_2             conda-forge      817kB
+  + getopt-win32                                 0.1  h6a83c73_3             conda-forge     Cached
+  + brotli-python                              1.0.9  py39h99910a6_8         conda-forge      343kB
+  + cffi                                      1.17.1  py39ha55e580_0         conda-forge      237kB
+  + unicodedata2                              16.0.0  py39ha55e580_0         conda-forge     Cached
+  + kiwisolver                                 1.4.7  py39h2b77a98_0         conda-forge     Cached
+  + llvmlite                                  0.43.0  py39he94c479_1         conda-forge       17MB
+  + greenlet                                   3.2.4  py39hdb6649d_0         conda-forge     Cached
+  + standard-sunau                            3.13.0  py39hcbf5309_2         conda-forge       19kB
+  + standard-aifc                             3.13.0  py39hcbf5309_2         conda-forge     Cached
+  + msgpack-python                             1.1.1  py39h2b77a98_0         conda-forge     Cached
+  + audioread                                  3.0.1  py39hcbf5309_2         conda-forge       37kB
+  + libfreetype6                              2.14.1  hdbac1cb_0             conda-forge     Cached
+  + pyyaml                                     6.0.2  py39hf73967f_2         conda-forge     Cached
+  + openfst                                    1.8.3  hc790b64_3             conda-forge     Cached
+  + libintl                                   0.22.5  h5728263_3             conda-forge       96kB
+  + libxml2                                   2.13.9  h741aa76_0             conda-forge     Cached
+  + libgomp                                   15.2.0  h8ee18e1_17            conda-forge      664kB
+  + libvorbis                                  1.3.7  h5112557_2             conda-forge     Cached
+  + libflac                                    1.4.3  h63175ca_0             conda-forge     Cached
+  + libbrotlienc                               1.2.0  hfd05255_1             conda-forge     Cached
+  + libbrotlidec                               1.2.0  hfd05255_1             conda-forge       34kB
+  + libtiff                                    4.7.0  hfc51747_1             conda-forge     Cached
+  + krb5                                      1.21.3  hdf4eb48_0             conda-forge     Cached
+  + zstandard                                 0.23.0  py39h0802e32_3         conda-forge      333kB
+  + sqlalchemy                                2.0.43  py39h0802e32_0         conda-forge     Cached
+  + libfreetype                               2.14.1  h57928b3_0             conda-forge     Cached
+  + ngram                                     1.3.16  hc790b64_1             conda-forge     Cached
+  + baumwelch                                  0.3.9  hd620369_3             conda-forge     Cached
+  + libglib                                   2.84.0  h7025463_0             conda-forge        4MB
+  + libhwloc                                  2.12.1  default_h88281d1_1000  conda-forge        2MB
+  + _openmp_mutex                                4.5  2_gnu                  conda-forge     Cached
+  + libsndfile                                 1.2.2  h81429f1_1             conda-forge     Cached
+  + brotli-bin                                 1.2.0  hfd05255_1             conda-forge     Cached
+  + openjpeg                                   2.5.3  h24db6dd_1             conda-forge     Cached
+  + lcms2                                       2.17  hbcf6048_0             conda-forge      511kB
+  + libpq                                      16.10  h18d9880_1             conda-forge        4MB
+  + freetype                                  2.14.1  h57928b3_0             conda-forge     Cached
+  + gts                                        0.7.6  h6b5321d_4             conda-forge      189kB
+  + gdk-pixbuf                               2.42.12  hed59a49_0             conda-forge      524kB
+  + tbb                                     2022.3.0  hd094cb3_1             conda-forge      156kB
+  + libgcc                                    15.2.0  h8ee18e1_17            conda-forge     Cached
+  + sox                                       14.4.2  h39259cc_1019          conda-forge     Cached
+  + brotli                                     1.2.0  h2d644bc_1             conda-forge     Cached
+  + pgvector                                   0.8.1  h2466b09_1             conda-forge      147kB
+  + psycopg2                                   2.9.9  py39h2d20f54_1         conda-forge      158kB
+  + postgresql                                 16.10  hd6c6192_1             conda-forge       21MB
+  + fontconfig                                2.15.0  h765892d_1             conda-forge      192kB
+  + mkl                                     2025.3.0  hac47afa_455           conda-forge      100MB
+  + xorg-libxau                               1.0.12  hba3369d_1             conda-forge     Cached
+  + xorg-libxdmcp                              1.1.5  hba3369d_1             conda-forge     Cached
+  + pthread-stubs                                0.4  h0e40799_1002          conda-forge        9kB
+  + fonttools                                 4.59.1  py39h5769e4c_0         conda-forge     Cached
+  + cairo                                     1.18.4  h5782bbf_0             conda-forge     Cached
+  + libblas                                   3.11.0  5_hf2e6a31_mkl         conda-forge     Cached
+  + libxcb                                    1.17.0  h0e4246c_0             conda-forge        1MB
+  + harfbuzz                                  11.0.0  h9e37d49_0             conda-forge        1MB
+  + libcblas                                  3.11.0  5_h2a3cdd5_mkl         conda-forge     Cached
+  + liblapack                                 3.11.0  5_hf9ab0e9_mkl         conda-forge     Cached
+  + xorg-libx11                               1.8.12  hf48077a_0             conda-forge     Cached
+  + pillow                                    11.3.0  py39hbad85af_0         conda-forge       42MB
+  + pango                                     1.56.3  h0c53d3b_1             conda-forge      454kB
+  + liblapacke                                3.11.0  5_h3ae206f_mkl         conda-forge       84kB
+  + numpy                                      2.0.2  py39h60232e0_1         conda-forge     Cached
+  + xorg-libxext                               1.3.7  hba3369d_0             conda-forge     Cached
+  + xorg-libice                                1.1.2  h0e40799_0             conda-forge     Cached
+  + librsvg                                   2.58.4  h5ce5fed_3             conda-forge        4MB
+  + kaldi                                   5.5.1112  cpu_hb457972_9         conda-forge       25MB
+  + contourpy                                  1.3.0  py39h2b77a98_2         conda-forge     Cached
+  + soxr-python                          0.5.0.post1  py39ha51f57c_1         conda-forge     Cached
+  + scipy                                     1.13.1  py39h1a10956_0         conda-forge       15MB
+  + numba                                     0.60.0  py39h5dcb127_0         conda-forge        4MB
+  + biopython                                   1.85  py39ha55e580_1         conda-forge     Cached
+  + xorg-libsm                                 1.2.6  h0e40799_0             conda-forge       97kB
+  + ffmpeg                                     7.1.0  gpl_h2585aa8_705       conda-forge       10MB
+  + matplotlib-base                            3.9.4  py39h5376392_0         conda-forge        7MB
+  + scikit-learn                               1.6.1  py39hdd013cc_0         conda-forge     Cached
+  + xorg-libxt                                 1.3.1  h0e40799_0             conda-forge     Cached
+  + hdbscan                                   0.8.39  py39h4b0a98a_0         conda-forge     Cached
+  + xorg-libxpm                               3.5.18  hba3369d_0             conda-forge      238kB
+  + libgd                                      2.3.3  h7208af6_11            conda-forge     Cached
+  + graphviz                                  12.2.1  hf40819d_1             conda-forge        1MB
+  + pynini                               2.1.6.post1  py39h0fafb3a_2         conda-forge      870kB
+  + urllib3                                    2.5.0  pyhd8ed1ab_0           conda-forge     Cached
+  + pgvector-python                            0.4.1  pyhc48fcf7_0           conda-forge     Cached
+  + pysoundfile                               0.13.1  pyhd8ed1ab_0           conda-forge       31kB
+  + kneed                                      0.8.5  pyhd8ed1ab_1           conda-forge       16kB
+  + requests                                  2.32.5  pyhd8ed1ab_0           conda-forge       59kB
+  + pooch                                      1.8.2  pyhd8ed1ab_3           conda-forge       56kB
+  + librosa                                   0.11.0  pyhd8ed1ab_0           conda-forge     Cached
+  + kalpy                                      0.7.2  py39h9da4e41_0         conda-forge        2MB
+  + montreal-forced-aligner                    3.3.4  pyhd8ed1ab_0           conda-forge       12MB
+
+  Upgrade:
+-----------------------------------------------------------------------------------------------------
+
+  - ca-certificates                        2025.12.2  haa95532_0             pkgs/main       Cached
+  + ca-certificates                         2026.1.4  h4c7d964_0             conda-forge     Cached
+  - openssl                                   3.0.19  hbb43b14_0             pkgs/main       Cached
+  + openssl                                    3.6.1  hf411b9b_1             conda-forge     Cached
+
+  Summary:
+
+  Install: 165 packages
+  Upgrade: 2 packages
+
+  Total download: 300MB
+
+-----------------------------------------------------------------------------------------------------
+
+
+Confirm changes: [Y/n] y
+pycparser                                          110.1kB @ 375.0kB/s  0.3s
+hpack                                               30.7kB @ 101.4kB/s  0.3s
+typing-extensions                                   90.5kB @ 294.3kB/s  0.3s
+charset-normalizer                                  51.0kB @ 141.7kB/s  0.4s
+libopus                                            307.4kB @ 403.6kB/s  0.5s
+cffi                                               236.9kB @ 187.1kB/s  0.5s
+pygments                                           889.3kB @ 564.6kB/s  1.6s
+zstd                                               388.5kB @ 238.7kB/s  1.3s
+audioread                                           36.8kB @  22.0kB/s  0.4s
+libbrotlidec                                        34.4kB @  20.0kB/s  0.2s
+gts                                                188.7kB @  86.7kB/s  0.5s
+pgvector                                           147.4kB @  55.9kB/s  0.9s
+x264                                                 1.0MB @ 381.4kB/s  2.4s
+fontconfig                                         192.4kB @  70.3kB/s  0.6s
+pango                                              454.3kB @ 119.0kB/s  1.1s
+xorg-libsm                                          97.1kB @  23.0kB/s  0.4s
+libxcb                                               1.2MB @ 258.4kB/s  2.0s
+xorg-libxpm                                        237.7kB @  50.2kB/s  0.5s
+pysoundfile                                         31.2kB @   6.4kB/s  0.2s
+pooch                                               55.6kB @  11.2kB/s  0.2s
+importlib_resources                                 33.8kB @   6.7kB/s  0.2s
+rich                                               201.1kB @  36.9kB/s  0.5s
+libmad                                              93.0kB @  15.5kB/s  1.0s
+libhwloc                                             2.4MB @ 397.5kB/s  4.4s
+pixman                                             542.8kB @  82.5kB/s  1.1s
+libintl                                             95.6kB @  14.5kB/s  0.5s
+brotli-python                                      343.5kB @  50.5kB/s  0.8s
+lcms2                                              510.6kB @  67.1kB/s  1.0s
+icu                                                 14.5MB @   1.6MB/s  8.7s
+harfbuzz                                             1.1MB @ 118.6kB/s  1.9s
+librsvg                                              3.9MB @ 315.1kB/s  3.4s
+pynini                                             869.9kB @  63.5kB/s  1.3s
+libglib                                              3.8MB @ 273.9kB/s  7.4s
+pysocks                                             21.8kB @   1.5kB/s  0.2s
+libwinpthread                                       36.6kB @   2.5kB/s  0.2s
+kalpy                                                2.2MB @ 137.7kB/s  2.5s
+libgomp                                            664.0kB @  39.6kB/s  0.6s
+pcre2                                              816.7kB @  48.7kB/s  2.3s
+gdk-pixbuf                                         524.0kB @  30.0kB/s  0.7s
+liblapacke                                          84.3kB @   4.8kB/s  0.2s
+matplotlib-base                                      6.8MB @ 274.1kB/s  7.2s
+requests                                            59.3kB @   2.4kB/s  0.3s
+lazy_loader                                          6.7kB @ 263.0 B/s  0.2s
+libwebp-base                                       279.2kB @  10.8kB/s  0.6s
+ffmpeg                                              10.0MB @ 387.0kB/s 16.3s
+zstandard                                          332.6kB @  12.5kB/s  0.8s
+postgresql                                          20.6MB @ 688.1kB/s 23.1s
+kneed                                               15.8kB @ 517.0 B/s  0.6s
+libpq                                                3.6MB @ 115.9kB/s  5.1s
+standard-sunau                                      18.6kB @ 590.0 B/s  0.5s
+pthread-stubs                                        9.4kB @ 297.0 B/s  0.1s
+aom                                                  2.0MB @  59.8kB/s  2.2s
+graphviz                                             1.2MB @  35.4kB/s  1.5s
+llvm-openmp                                        347.6kB @  10.5kB/s  0.5s
+psycopg2                                           157.9kB @   4.7kB/s  0.7s
+tbb                                                155.7kB @   4.6kB/s  0.3s
+tqdm                                                89.5kB @   2.6kB/s  0.2s
+numba                                                4.3MB @ 105.4kB/s  6.6s
+kaldi                                               25.3MB @ 588.0kB/s 40.3s
+scipy                                               14.9MB @ 296.5kB/s 23.4s
+montreal-forced-aligner                             11.6MB @ 227.0kB/s 17.8s
+llvmlite                                            17.1MB @ 284.3kB/s 19.1s
+pillow                                              42.0MB @ 570.3kB/s 30.6s
+mkl                                                100.2MB @   1.1MB/s 1m:11.4s
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: -
+\
+done
+
+(mfa) C:\Users\DELL>mfa version
+3.3.4
+
+(mfa) C:\Users\DELL>mfa model download acoustic english_us_arpa
+
+(mfa) C:\Users\DELL>mfa model download dictionary english_us_arpa
+
+(mfa) C:\Users\DELL>mfa align C:\MFA_project\data english_us_arpa english_us_arpa C:\MFA_project\output
+ INFO     Setting up corpus information...
+ INFO     Loading corpus from source files...
+   6% ━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/100  [ 0:00:02 < -:--:-- , ? it/s ]
+ INFO     Found 1 speaker across 6 files, average number of utterances per speaker: 6.0
+ INFO     Initializing multiprocessing jobs...
+ WARNING  Number of jobs was specified as 3, but due to only having 1 speakers, MFA will only use 1 jobs. Use the --single_speaker flag if you would like to
+          split utterances across jobs regardless of their speaker.
+ INFO     Normalizing text...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Generating MFCCs...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:12 < 0:00:00 , 4 it/s ]
+ INFO     Calculating CMVN...
+ INFO     Generating final features...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Creating corpus split...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Compiling training graphs...
+ INFO     Performing first-pass alignment...
+ INFO     Generating alignments...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Calculating fMLLR for speaker adaptation...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Performing second-pass alignment...
+ INFO     Generating alignments...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Collecting phone and word alignments from alignment lattices...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:02 < 0:00:00 , ? it/s ]
+ INFO     Analyzing alignment quality...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Exporting alignment TextGrids to C:\MFA_project\output...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:00 < 0:00:00 , ? it/s ]
+ INFO     Finished exporting TextGrids to C:\MFA_project\output!
+ INFO     Done! Everything took 89.211 seconds
+
+(mfa) C:\Users\DELL>mfa align wav transcripts english_us_arpa aligned --clean --verbose
+
+ Usage: mfa align [OPTIONS] CORPUS_DIRECTORY DICTIONARY_PATH ACOUSTIC_MODEL_PATH OUTPUT_DIRECTORY
+
+╭─ Error ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Invalid value for 'CORPUS_DIRECTORY': Corpus directory does not exist.                                                                                   │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+(mfa) C:\Users\DELL>cd MFA_project
+The system cannot find the path specified.
+
+(mfa) C:\Users\DELL>cd C:\MFA_project
+
+(mfa) C:\MFA_project>dir
+ Volume in drive C is OS
+ Volume Serial Number is C8E1-6FE4
+
+ Directory of C:\MFA_project
+
+05-02-2026  18:27    <DIR>          .
+05-02-2026  18:20    <DIR>          data
+05-02-2026  18:29    <DIR>          output
+               0 File(s)              0 bytes
+               3 Dir(s)  43,419,955,200 bytes free
+
+(mfa) C:\MFA_project>cd C:\MFA_project\data
+
+(mfa) C:\MFA_project\data>dir
+ Volume in drive C is OS
+ Volume Serial Number is C8E1-6FE4
+
+ Directory of C:\MFA_project\data
+
+05-02-2026  18:20    <DIR>          .
+05-02-2026  18:27    <DIR>          ..
+05-02-2026  18:16               438 F2BJRLP1.TXT
+05-02-2026  18:16           810,916 F2BJRLP1.wav
+05-02-2026  18:16               492 F2BJRLP2.TXT
+05-02-2026  18:16           917,742 F2BJRLP2.wav
+05-02-2026  18:16               520 F2BJRLP3.TXT
+05-02-2026  18:16           983,642 F2BJRLP3.wav
+05-02-2026  18:16                23 ISLE_SESS0131_BLOCKD02_01_sprt1.txt
+05-02-2026  18:16           136,096 ISLE_SESS0131_BLOCKD02_01_sprt1.wav
+05-02-2026  18:16                19 ISLE_SESS0131_BLOCKD02_02_sprt1.txt
+05-02-2026  18:16           128,096 ISLE_SESS0131_BLOCKD02_02_sprt1.wav
+05-02-2026  18:16                20 ISLE_SESS0131_BLOCKD02_03_sprt1.txt
+05-02-2026  18:16           148,096 ISLE_SESS0131_BLOCKD02_03_sprt1.wav
+              12 File(s)      3,126,100 bytes
+               2 Dir(s)  43,346,554,880 bytes free
+
+(mfa) C:\MFA_project\data>mfa align wav transcripts english_us_arpa aligned --clean --verbose
+
+ Usage: mfa align [OPTIONS] CORPUS_DIRECTORY DICTIONARY_PATH ACOUSTIC_MODEL_PATH OUTPUT_DIRECTORY
+
+╭─ Error ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Invalid value for 'CORPUS_DIRECTORY': Corpus directory does not exist.                                                                                   │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+(mfa) C:\MFA_project\data>cd C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>dir
+ Volume in drive C is OS
+ Volume Serial Number is C8E1-6FE4
+
+ Directory of C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment
+
+05-02-2026  18:16    <DIR>          .
+05-02-2026  18:16    <DIR>          ..
+05-02-2026  18:16            69,253 Assignment.pdf
+05-02-2026  18:16    <DIR>          transcripts
+05-02-2026  18:16    <DIR>          wav
+               1 File(s)         69,253 bytes
+               4 Dir(s)  38,411,395,072 bytes free
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa model list
+
+ Usage: mfa model list [OPTIONS] {acoustic|dictionary|g2p|ivector|language_model|tokenizer}
+
+╭─ Error ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Missing argument '{acoustic|dictionary|g2p|ivector|language_model|tokenizer}'. Choose from:                                                              │
+│         acoustic,                                                                                                                                        │
+│         dictionary,                                                                                                                                      │
+│         g2p,                                                                                                                                             │
+│         ivector,                                                                                                                                         │
+│         language_model,                                                                                                                                  │
+│         tokenizer                                                                                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa model list dictionary
+['english_us_arpa']
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa model list acoustic
+['english_us_arpa']
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa model list g2p
+No models found
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa align wav transcripts english_us_arpa aligned --clean --verbose
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\mfa\Scripts\mfa-script.py", line 9, in <module>
+    sys.exit(mfa_cli())
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 404, in __call__
+    return super().__call__(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 187, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\command_line\align.py", line 121, in align_corpus_cli
+    aligner = PretrainedAligner(
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\alignment\pretrained.py", line 84, in __init__
+    super().__init__(**kw)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\transcription\transcriber.py", line 395, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\alignment\base.py", line 110, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\corpus\acoustic_corpus.py", line 1101, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\corpus\acoustic_corpus.py", line 104, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\corpus\base.py", line 128, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\abc.py", line 573, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\abc.py", line 453, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\dictionary\multispeaker.py", line 100, in __init__
+    self.dictionary_model = DictionaryModel(
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\models.py", line 1428, in __init__
+    with mfa_open(self.path, "r") as f:
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\helper.py", line 87, in mfa_open
+    file = open(path, mode, encoding=encoding)
+PermissionError: [Errno 13] Permission denied: 'transcripts'
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa align . english_us_arpa english_us_arpa aligned --clean --verbose
+ INFO     Setting up corpus information...
+ INFO     Loading corpus from source files...
+   6% ━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/100  [ 0:00:01 < -:--:-- , ? it/s ]
+ INFO     Found 1 speaker across 6 files, average number of utterances per speaker: 6.0
+ INFO     Initializing multiprocessing jobs...
+ WARNING  Number of jobs was specified as 3, but due to only having 1 speakers, MFA will only use 1 jobs. Use the --single_speaker flag if you would like to
+          split utterances across jobs regardless of their speaker.
+ INFO     Normalizing text...
+   0% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0/6  [ 0:00:01 < -:--:-- , ? it/s ]
+ INFO     Generating MFCCs...
+   0% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0/6  [ 0:00:01 < -:--:-- , ? it/s ]
+ INFO     Calculating CMVN...
+ INFO     Generating final features...
+   0% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0/6  [ 0:00:01 < -:--:-- , ? it/s ]
+ ERROR    There was an error in the run, please see the log.
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\mfa\Scripts\mfa-script.py", line 9, in <module>
+    sys.exit(mfa_cli())
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 404, in __call__
+    return super().__call__(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 187, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\command_line\align.py", line 129, in align_corpus_cli
+    aligner.align()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\alignment\pretrained.py", line 405, in align
+    self.setup()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\alignment\pretrained.py", line 221, in setup
+    self.load_corpus()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\corpus\acoustic_corpus.py", line 1184, in load_corpus
+    self.generate_features()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\corpus\acoustic_corpus.py", line 533, in generate_features
+    self.generate_final_features()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\corpus\acoustic_corpus.py", line 480, in generate_final_features
+    raise FeatureGenerationError(
+montreal_forced_aligner.exceptions.FeatureGenerationError: FeatureGenerationError:
+
+No utterances had features, please check the logs in C:\Users\DELL\Documents\MFA\Assignment\Assignment\split1\log for errors.
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa align . english_us_arpa english_us_arpa aligned --clean --verbose
+ INFO     Setting up corpus information...
+ INFO     Loading corpus from source files...
+   6% ━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/100  [ 0:00:02 < -:--:-- , ? it/s ]
+ INFO     Found 1 speaker across 6 files, average number of utterances per speaker: 6.0
+ INFO     Initializing multiprocessing jobs...
+ WARNING  Number of jobs was specified as 3, but due to only having 1 speakers, MFA will only use 1 jobs. Use the --single_speaker flag if you would like to
+          split utterances across jobs regardless of their speaker.
+ INFO     Normalizing text...
+   0% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0/6  [ 0:00:01 < -:--:-- , ? it/s ]
+ INFO     Generating MFCCs...
+   0% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0/6  [ 0:00:01 < -:--:-- , ? it/s ]
+ INFO     Calculating CMVN...
+ INFO     Generating final features...
+   0% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0/6  [ 0:00:01 < -:--:-- , ? it/s ]
+ ERROR    There was an error in the run, please see the log.
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\mfa\Scripts\mfa-script.py", line 9, in <module>
+    sys.exit(mfa_cli())
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 404, in __call__
+    return super().__call__(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 187, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\command_line\align.py", line 129, in align_corpus_cli
+    aligner.align()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\alignment\pretrained.py", line 405, in align
+    self.setup()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\alignment\pretrained.py", line 221, in setup
+    self.load_corpus()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\corpus\acoustic_corpus.py", line 1184, in load_corpus
+    self.generate_features()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\corpus\acoustic_corpus.py", line 533, in generate_features
+    self.generate_final_features()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\corpus\acoustic_corpus.py", line 480, in generate_final_features
+    raise FeatureGenerationError(
+montreal_forced_aligner.exceptions.FeatureGenerationError: FeatureGenerationError:
+
+No utterances had features, please check the logs in C:\Users\DELL\Documents\MFA\Assignment\Assignment\split1\log for errors.
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>ffmpeg -i wav\F2BJRLP1.wav
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.4
+  configuration: --prefix=/d/bld/ffmpeg_1732155177064/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1732155177064/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[aist#0:0/pcm_s16le @ 00000193A8C38280] Guessed Channel Layout: mono
+Input #0, nistsphere, from 'wav\F2BJRLP1.wav':
+  Metadata:
+    corpus_id       : BU_Radio_Corpus
+    speaker_id      : f2b
+    story_id        : j
+    recording_site  : lab
+    sample_max      : 8362
+    sample_min      : -8740
+  Duration: 00:00:25.31, bitrate: 256 kb/s
+  Stream #0:0: Audio: pcm_s16le, 16000 Hz, mono, s16, 256 kb/s
+At least one output file must be specified
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mkdir corpus
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>move wav\*.wav corpus\
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\wav\F2BJRLP1.wav
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\wav\F2BJRLP2.wav
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\wav\F2BJRLP3.wav
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\wav\ISLE_SESS0131_BLOCKD02_01_sprt1.wav
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\wav\ISLE_SESS0131_BLOCKD02_02_sprt1.wav
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\wav\ISLE_SESS0131_BLOCKD02_03_sprt1.wav
+        6 file(s) moved.
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>move transcripts\*.txt corpus\
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\transcripts\F2BJRLP1.TXT
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\transcripts\F2BJRLP2.TXT
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\transcripts\F2BJRLP3.TXT
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\transcripts\ISLE_SESS0131_BLOCKD02_01_sprt1.txt
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\transcripts\ISLE_SESS0131_BLOCKD02_02_sprt1.txt
+C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\transcripts\ISLE_SESS0131_BLOCKD02_03_sprt1.txt
+        6 file(s) moved.
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>dir corpus
+ Volume in drive C is OS
+ Volume Serial Number is C8E1-6FE4
+
+ Directory of C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment\corpus
+
+05-02-2026  20:35    <DIR>          .
+05-02-2026  20:35    <DIR>          ..
+05-02-2026  20:06               401 F2BJRLP1.TXT
+05-02-2026  18:16           810,916 F2BJRLP1.wav
+05-02-2026  18:16               492 F2BJRLP2.TXT
+05-02-2026  18:16           917,742 F2BJRLP2.wav
+05-02-2026  18:16               520 F2BJRLP3.TXT
+05-02-2026  18:16           983,642 F2BJRLP3.wav
+05-02-2026  18:16                23 ISLE_SESS0131_BLOCKD02_01_sprt1.txt
+05-02-2026  18:16           136,096 ISLE_SESS0131_BLOCKD02_01_sprt1.wav
+05-02-2026  18:16                19 ISLE_SESS0131_BLOCKD02_02_sprt1.txt
+05-02-2026  18:16           128,096 ISLE_SESS0131_BLOCKD02_02_sprt1.wav
+05-02-2026  18:16                20 ISLE_SESS0131_BLOCKD02_03_sprt1.txt
+05-02-2026  18:16           148,096 ISLE_SESS0131_BLOCKD02_03_sprt1.wav
+              12 File(s)      3,126,063 bytes
+               2 Dir(s)  35,926,482,944 bytes free
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa align corpus english_us_arpa english_us_arpa aligned --clean --verbose
+ INFO     Setting up corpus information...
+ INFO     Loading corpus from source files...
+   6% ━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/100  [ 0:00:02 < -:--:-- , ? it/s ]
+ INFO     Found 1 speaker across 6 files, average number of utterances per speaker: 6.0
+ INFO     Initializing multiprocessing jobs...
+ WARNING  Number of jobs was specified as 3, but due to only having 1 speakers, MFA will only use 1 jobs. Use the --single_speaker flag if you would like to
+          split utterances across jobs regardless of their speaker.
+ INFO     Normalizing text...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Generating MFCCs...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Calculating CMVN...
+ INFO     Generating final features...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Creating corpus split...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Compiling training graphs...
+ INFO     Performing first-pass alignment...
+ INFO     Generating alignments...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Calculating fMLLR for speaker adaptation...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Performing second-pass alignment...
+ INFO     Generating alignments...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Collecting phone and word alignments from alignment lattices...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Analyzing alignment quality...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Exporting alignment TextGrids to aligned...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:00 < 0:00:00 , ? it/s ]
+ INFO     Finished exporting TextGrids to aligned!
+ INFO     Done! Everything took 102.459 seconds
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa validate corpus english_us_arpa
+ INFO     Setting up corpus information...
+ INFO     Found 1 speaker across 6 files, average number of utterances per speaker: 6.0
+ INFO     Initializing multiprocessing jobs...
+ WARNING  Number of jobs was specified as 3, but due to only having 1 speakers, MFA will only use 1 jobs. Use the --single_speaker flag if you would like to
+          split utterances across jobs regardless of their speaker.
+ INFO     Text already normalized.
+ INFO     Features already generated.
+ INFO     Creating corpus split...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Corpus
+ INFO     6 sound files
+ INFO     6 text files
+ INFO     1 speakers
+ INFO     6 utterances
+ INFO     97.163 seconds total duration
+ INFO     Sound file read errors
+ INFO     There were no issues reading sound files.
+ INFO     Feature generation
+ INFO     There were no utterances missing features.
+ INFO     Files without transcriptions
+ INFO     There were no sound files missing transcriptions.
+ INFO     Transcriptions without sound files
+ INFO     There were no transcription files missing sound files.
+ INFO     Dictionary
+ INFO     Out of vocabulary words
+ WARNING  26 OOV word types
+ WARNING  56total OOV tokens
+ WARNING  For a full list of the word types, please see: C:\Users\DELL\Documents\MFA\corpus\oovs_found.txt. For a by-utterance breakdown of missing words,
+          see: C:\Users\DELL\Documents\MFA\corpus\utterance_oovs.txt
+ INFO     Training
+ INFO     Initializing training for monophone...
+ ERROR    There was an error in the run, please see the log.
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\mfa\Scripts\mfa-script.py", line 9, in <module>
+    sys.exit(mfa_cli())
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 404, in __call__
+    return super().__call__(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 187, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\command_line\validate.py", line 142, in validate_corpus_cli
+    validator.validate(output_directory=output_directory)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\validation\corpus_validator.py", line 577, in validate
+    self.train()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\acoustic_modeling\trainer.py", line 631, in train
+    trainer.train()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\acoustic_modeling\base.py", line 397, in train
+    self.initialize_training()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\acoustic_modeling\base.py", line 218, in initialize_training
+    self._trainer_initialization()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\acoustic_modeling\monophone.py", line 331, in _trainer_initialization
+    gmm_init_mono(topo, feats, shared_phones, str(self.model_path), str(tree_path))
+_kalpy.util.KaldiFatalError: bad variance
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa g2p english_us_arpa oovs_found.txt generated.dict
+
+ Usage: mfa g2p [OPTIONS] INPUT_PATH G2P_MODEL_PATH OUTPUT_PATH
+
+╭─ Error ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Invalid value for 'INPUT_PATH': Path 'english_us_arpa' does not exist.                                                                                   │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa g2p oovs_found_english_us_arpa.txt english_us_arpa generated.dict
+
+ Usage: mfa g2p [OPTIONS] INPUT_PATH G2P_MODEL_PATH OUTPUT_PATH
+
+╭─ Error ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Invalid value for 'INPUT_PATH': Path 'oovs_found_english_us_arpa.txt' does not exist.                                                                    │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>cd C:\Users\DELL\Documents\MFA\corpus
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>mfa g2p oovs_found_english_us_arpa.txt english_us_arpa generated.dict
+
+ Usage: mfa g2p [OPTIONS] INPUT_PATH G2P_MODEL_PATH OUTPUT_PATH
+
+╭─ Error ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Invalid value for 'G2P_MODEL_PATH': PretrainedModelNotFoundError:                                                                                        │
+│                                                                                                                                                          │
+│ Could not find a model named "english_us_arpa" for g2p.                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>mfa models download g2p english_us
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\mfa\Scripts\mfa-script.py", line 9, in <module>
+    sys.exit(mfa_cli())
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 404, in __call__
+    return super().__call__(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 187, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\command_line\model.py", line 83, in download_model_cli
+    manager.download_model(model_type, name, version=version)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\models.py", line 1895, in download_model
+    raise RemoteModelNotFoundError(
+montreal_forced_aligner.exceptions.RemoteModelNotFoundError: RemoteModelNotFoundError:
+
+Could not find a model named "english_us" for g2p.
+Available: bulgarian_mfa, croatian_mfa, czech_mfa, english_india_mfa, english_nigeria_mfa, english_uk_mfa, english_us_arpa, english_us_mfa, french_mfa, german_mfa, hausa_mfa, japanese_katakana_mfa, japanese_mfa, korean_jamo_mfa, korean_mfa, mandarin_china_mfa, mandarin_china_pinyin_mfa, mandarin_taiwan_mfa, mandarin_taiwan_pinyin_mfa, polish_mfa, portuguese_brazil_mfa, portuguese_portugal_mfa, russian_mfa, serbocroatian_croatian_mfa, serbocroatian_serbian_mfa, spanish_latin_america_mfa, spanish_spain_mfa, swahili_mfa, swedish_mfa, thai_mfa, turkish_mfa, ukrainian_mfa, vietnamese_hanoi_mfa, vietnamese_ho_chi_minh_city_mfa, and vietnamese_hue_mfa.
+You can see all available models either on https://mfa-models.readthedocs.io/en/latest/ or https://github.com/MontrealCorpusTools/mfa-models/releases.
+If you're looking for a model from 1.0, please see https://github.com/MontrealCorpusTools/mfa-models/releases/tag/g2p-archive-v1.0.
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>mfa models download g2p english_us_arpa
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>mfa g2p oovs_found_english_us_arpa.txt english_us_arpa generated.dict
+ INFO     Generating pronunciations...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8/8  [ 0:00:01 < 0:00:00 , 6 it/s ]
+ INFO     Done! Everything took 2.721 seconds
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>type english_us_arpa.dict generated.dict > english_us_arpa_fixed.dict
+The system cannot find the file specified.
+Error occurred while processing: english_us_arpa.dict.
+
+generated.dict
+
+
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>mfa models list dictionary
+['english_us_arpa']
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>mfa models info dictionary english_us_arpa
+
+ Usage: mfa models [OPTIONS] COMMAND [ARGS]...
+
+╭─ Error ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ No such command 'info'.                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>dir C:\Users\DELL\Documents\MFA\models\dictionary
+The system cannot find the file specified.
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>dir C:\Users\DELL\Documents\MFA\corpus\dictionary
+ Volume in drive C is OS
+ Volume Serial Number is C8E1-6FE4
+
+ Directory of C:\Users\DELL\Documents\MFA\corpus\dictionary
+
+05-02-2026  20:36    <DIR>          .
+05-02-2026  20:58    <DIR>          ..
+05-02-2026  20:40    <DIR>          1_english_us_arpa
+05-02-2026  20:40    <DIR>          phones
+               0 File(s)              0 bytes
+               4 Dir(s)  29,651,775,488 bytes free
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>copy "C:\Users\DELL\Documents\MFA\models\dictionary\english_us_arpa.dict" "C:\Users\DELL\Documents\MFA\corpus"
+The system cannot find the path specified.
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>copy "C:\Users\DELL\Documents\MFA\corpus\dictionary" "C:\Users\DELL\Documents\MFA\corpus"
+C:\Users\DELL\Documents\MFA\corpus\dictionary\*
+The system cannot find the file specified.
+        0 file(s) copied.
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>mfa align corpus english_us_arpa_fixed.dict english_us_arpa aligned_fixed --clean --verbose
+ ERROR    There was an error in the run, please see the log.
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\mfa\Scripts\mfa-script.py", line 9, in <module>
+    sys.exit(mfa_cli())
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 404, in __call__
+    return super().__call__(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\rich_click\rich_command.py", line 187, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\click\decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\command_line\align.py", line 129, in align_corpus_cli
+    aligner.align()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\alignment\pretrained.py", line 405, in align
+    self.setup()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\alignment\pretrained.py", line 221, in setup
+    self.load_corpus()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\corpus\acoustic_corpus.py", line 1153, in load_corpus
+    self.dictionary_setup()
+  File "C:\Users\DELL\anaconda3\envs\mfa\lib\site-packages\montreal_forced_aligner\dictionary\multispeaker.py", line 562, in dictionary_setup
+    raise DictionaryFileError(dictionary_model.path)
+montreal_forced_aligner.exceptions.DictionaryFileError: <exception str() failed>
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>mfa models download dictionary english_us_arpa
+Local version of model already exists (C:\Users\DELL\Documents\MFA\pretrained_models\dictionary\english_us_arpa.dict). Use the --ignore_cache flag to forceredownloading.
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>mfa models path dictionary english_us_arpa
+
+ Usage: mfa models [OPTIONS] COMMAND [ARGS]...
+
+╭─ Error ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ No such command 'path'.                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>copy "C:\Users\DELL\Documents\MFA\pretrained_models\dictionary\english_us_arpa.dict" .
+        1 file(s) copied.
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>dir english_us_arpa.dict
+ Volume in drive C is OS
+ Volume Serial Number is C8E1-6FE4
+
+ Directory of C:\Users\DELL\Documents\MFA\corpus
+
+05-02-2026  18:23         7,186,498 english_us_arpa.dict
+               1 File(s)      7,186,498 bytes
+               0 Dir(s)  27,975,413,760 bytes free
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>type english_us_arpa.dict generated.dict > english_us_arpa_fixed.dict
+
+english_us_arpa.dict
+
+
+The system cannot find the file specified.
+Error occurred while processing: generated.dict.
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>dir /s generated.dict
+ Volume in drive C is OS
+ Volume Serial Number is C8E1-6FE4
+File Not Found
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>type english_us_arpa.dict generated.dict > english_us_arpa_fixed.dict
+
+english_us_arpa.dict
+
+
+The system cannot find the file specified.
+Error occurred while processing: generated.dict.
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>mfa align corpus english_us_arpa_fixed.dict english_us_arpa aligned_fixed --clean --verbose
+
+ Usage: mfa align [OPTIONS] CORPUS_DIRECTORY DICTIONARY_PATH ACOUSTIC_MODEL_PATH OUTPUT_DIRECTORY
+
+╭─ Error ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Invalid value for 'CORPUS_DIRECTORY': Corpus directory does not exist.                                                                                   │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>dir
+ Volume in drive C is OS
+ Volume Serial Number is C8E1-6FE4
+
+ Directory of C:\Users\DELL\Documents\MFA\corpus
+
+06-02-2026  15:59    <DIR>          .
+05-02-2026  20:56    <DIR>          ..
+06-02-2026  15:53    <DIR>          alignment
+06-02-2026  15:53           430,080 corpus.db
+06-02-2026  15:53            13,772 corpus.log
+06-02-2026  15:53                44 corpus.yaml
+06-02-2026  15:53    <DIR>          dictionary
+05-02-2026  18:23         7,186,498 english_us_arpa.dict
+06-02-2026  16:02         7,186,498 english_us_arpa_fixed.dict
+               5 File(s)     14,816,892 bytes
+               4 Dir(s)  27,960,684,544 bytes free
+
+(mfa) C:\Users\DELL\Documents\MFA\corpus>cd "C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment"
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>mfa align . "C:\Users\DELL\Documents\MFA\corpus\english_us_arpa_fixed.dict" english_us_arpaaligned_fixed --clean --verbose
+ INFO     Setting up corpus information...
+ INFO     Loading corpus from source files...
+   6% ━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/100  [ 0:00:02 < -:--:-- , ? it/s ]
+ INFO     Found 1 speaker across 6 files, average number of utterances per speaker: 6.0
+ INFO     Initializing multiprocessing jobs...
+ WARNING  Number of jobs was specified as 3, but due to only having 1 speakers, MFA will only use 1 jobs. Use the --single_speaker flag if you would like to
+          split utterances across jobs regardless of their speaker.
+ INFO     Normalizing text...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Generating MFCCs...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Calculating CMVN...
+ INFO     Generating final features...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Creating corpus split...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Compiling training graphs...
+ INFO     Performing first-pass alignment...
+ INFO     Generating alignments...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Calculating fMLLR for speaker adaptation...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Performing second-pass alignment...
+ INFO     Generating alignments...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Collecting phone and word alignments from alignment lattices...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:02 < 0:00:00 , ? it/s ]
+ INFO     Analyzing alignment quality...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Exporting alignment TextGrids to aligned_fixed...
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6/6  [ 0:00:00 < 0:00:00 , ? it/s ]
+ INFO     Finished exporting TextGrids to aligned_fixed!
+ INFO     Done! Everything took 83.986 seconds
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>
+
+(mfa) C:\Users\DELL\OneDrive\Desktop\Assignment iiit\Assignment>
