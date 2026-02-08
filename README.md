@@ -94,14 +94,14 @@ mfa align corpus english_us_arpa_fixed.dict english_us_arpa aligned_fixed --clea
 ## Screenshots
 
 ### OOV Words Detected
-![OOV Count](screenshots/oov_count.png)
+![OOV Count](screenshot/oov_count.png)
 
 ### OOV List
-![OOV Found](screenshots/oov_found.png)
+![OOV Found](screenshot/oov_found.png)
 
 ### Generated Dictionary
-![Generated Dictionary](screenshots/generated.dict.png)
+![Generated Dictionary](screenshot/generated.dict.png)
 
-### TextGrid Visualization in Praat
-![Praat Alignment](screenshots/utterances.png)
+### Utterances
+![Utterances](screenshot/utterances.png)
 
