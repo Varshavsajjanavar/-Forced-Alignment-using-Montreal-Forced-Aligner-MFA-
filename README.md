@@ -94,7 +94,7 @@ mfa align corpus english_us_arpa_fixed.dict english_us_arpa aligned_fixed --clea
 ## Screenshots
 
 ### OOV Words Detected
-![OOV Counts](screenshots/oov_count.png)
+![OOV Count](screenshots/oov_count.png)
 
 ### OOV List
 ![OOV Found](screenshots/oov_found.png)
