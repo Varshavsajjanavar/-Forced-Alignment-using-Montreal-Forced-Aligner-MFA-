@@ -1,8 +1,6 @@
 # Forced Alignment using Montreal Forced Aligner MFA
 Forced alignment using Montreal Forced Aligner (MFA) to align audio with transcripts at word and phoneme level, including OOV handling and TextGrid outputs.
 
-# Forced Alignment using Montreal Forced Aligner (MFA)
-
 ## Objective
 To perform forced alignment between speech audio and its corresponding text
 transcription using Montreal Forced Aligner (MFA) and generate word-level and
@@ -36,7 +34,7 @@ mfa align data english_us_arpa english_us_arpa output
 ## Output
 
 TextGrid files are generated in the output folder containing:
-Word boundaries
-Phoneme boundaries
-These can be visualized using Praat software.
+-Word boundaries
+-Phoneme boundaries
+-These can be visualized using Praat software.
 
