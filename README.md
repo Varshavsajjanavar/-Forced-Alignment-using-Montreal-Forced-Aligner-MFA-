@@ -105,3 +105,7 @@ mfa align corpus english_us_arpa_fixed.dict english_us_arpa aligned_fixed --clea
 ### Utterances
 ![Utterances](screenshot/utterances.png)
 
+## Author
+Name: Varsha Sajjanavar  
+
+
